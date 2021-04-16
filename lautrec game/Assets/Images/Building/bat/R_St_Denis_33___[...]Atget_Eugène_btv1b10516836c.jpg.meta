@@ -1,7 +1,10 @@
 fileFormatVersion: 2
 guid: 9ba22329fe8094846aed96e9c30b1728
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: -915778437651671164
+    second: "R_St_Denis_33___[...]Atget_Eug\xE8ne_btv1b10516836c_0"
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -109,7 +112,28 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: "R_St_Denis_33___[...]Atget_Eug\xE8ne_btv1b10516836c_0"
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 175
+        width: 974
+        height: 1100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4875fcaec508a43f0800000000000000
+      internalID: -915778437651671164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []

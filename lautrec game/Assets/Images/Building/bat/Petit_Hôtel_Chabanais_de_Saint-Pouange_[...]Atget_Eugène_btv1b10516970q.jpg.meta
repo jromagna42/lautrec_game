@@ -1,7 +1,10 @@
 fileFormatVersion: 2
 guid: b45fe536d39ed764c902702b912fb0af
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: -2252195206314641591
+    second: "Petit_H\xF4tel_Chabanais_de_Saint-Pouange_[...]Atget_Eug\xE8ne_btv1b10516970q_0"
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -109,7 +112,28 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: "Petit_H\xF4tel_Chabanais_de_Saint-Pouange_[...]Atget_Eug\xE8ne_btv1b10516970q_0"
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 201
+        width: 987
+        height: 1057
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94737ca74689eb0e0800000000000000
+      internalID: -2252195206314641591
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []

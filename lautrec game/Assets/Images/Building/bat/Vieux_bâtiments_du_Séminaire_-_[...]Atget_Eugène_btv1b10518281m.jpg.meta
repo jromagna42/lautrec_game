@@ -1,7 +1,10 @@
 fileFormatVersion: 2
 guid: 3418bc9a094d38e4ab7b05e24f777935
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: 467085783767607582
+    second: "Vieux_b\xE2timents_du_S\xE9minaire_-_[...]Atget_Eug\xE8ne_btv1b10518281m_0"
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -109,7 +112,28 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: "Vieux_b\xE2timents_du_S\xE9minaire_-_[...]Atget_Eug\xE8ne_btv1b10518281m_0"
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 271
+        width: 859
+        height: 569
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e196a1dab0c6b7600800000000000000
+      internalID: 467085783767607582
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
