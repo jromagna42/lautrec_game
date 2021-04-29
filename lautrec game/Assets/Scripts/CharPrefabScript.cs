@@ -39,7 +39,6 @@ public class CharPrefabScript : MonoBehaviour
      {
         int tmp = 1;
         bigLayerValue.TryGetValue(layer.ToString(),out tmp);
-        Debug.Log(tmp);
         spriteHolder.GetComponent<SpriteRenderer>().sortingOrder = tmp;
         poteau.GetComponent<SpriteRenderer>().sortingOrder = tmp;
      }
@@ -52,7 +51,6 @@ public class CharPrefabScript : MonoBehaviour
         // }
         int tmp = 1;
         bigLayerValue.TryGetValue(layer.ToString(),out tmp);
-        Debug.Log(tmp);
         spriteHolder.GetComponent<SpriteRenderer>().sortingOrder = tmp;
         poteau.GetComponent<SpriteRenderer>().sortingOrder = tmp;
         goingUp = (Random.value > 0.5f)? true : false;
