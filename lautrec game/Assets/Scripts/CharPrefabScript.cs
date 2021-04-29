@@ -2,10 +2,23 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+
 public class CharPrefabScript : MonoBehaviour
 {
-    public bool dirRight = true;
+    public enum bigLayer {back,middle,front};
+
+    Dictionary<string, int> bigLayerValue = new Dictionary<string, int>()
+    {
+        {"back", 1},
+        {"middle", 5},
+        {"front", 10}
+    };
+    
     public GameObject spriteHolder;
+    public GameObject poteau;
+    public bigLayer layer;
+    public bool dirRight = true;
+    public bool isMoving = true;
 
     //CHAR DIRECTION
     public bool baseSpriteIsRight = true;
@@ -19,8 +32,17 @@ public class CharPrefabScript : MonoBehaviour
     float realSpeed;
     public float maxTimer = 1.5f;
     public float minTimer = 0.5f;
-    public float timer = 0;
-    public bool goingUp = true;
+    float timer = 0;
+    bool goingUp = true;
+
+    void OnValidate()
+     {
+        int tmp = 1;
+        bigLayerValue.TryGetValue(layer.ToString(),out tmp);
+        Debug.Log(tmp);
+        spriteHolder.GetComponent<SpriteRenderer>().sortingOrder = tmp;
+        poteau.GetComponent<SpriteRenderer>().sortingOrder = tmp;
+     }
 
     void Start()
     {
@@ -28,6 +50,11 @@ public class CharPrefabScript : MonoBehaviour
         // {
         //     child.rotation = Quaternion.Euler(0, 90, 0);
         // }
+        int tmp = 1;
+        bigLayerValue.TryGetValue(layer.ToString(),out tmp);
+        Debug.Log(tmp);
+        spriteHolder.GetComponent<SpriteRenderer>().sortingOrder = tmp;
+        poteau.GetComponent<SpriteRenderer>().sortingOrder = tmp;
         goingUp = (Random.value > 0.5f)? true : false;
     }
 
@@ -75,7 +102,8 @@ public class CharPrefabScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        MoveUpDown();
+        if (isMoving)
+            MoveUpDown();
         DirectionSprite();
     }
 }

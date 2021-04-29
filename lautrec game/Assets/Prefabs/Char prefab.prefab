@@ -26,7 +26,7 @@ Transform:
   m_GameObject: {fileID: 2391069181860069467}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: -4.5999994, z: 0}
-  m_LocalScale: {x: 0.5233002, y: 8.662165, z: 1}
+  m_LocalScale: {x: 0.4, y: 8.662165, z: 1}
   m_Children: []
   m_Father: {fileID: 8833704314658893296}
   m_RootOrder: 1
@@ -69,7 +69,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 5
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 9ff3455dbf414fc4f88469dc9069ba08, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -128,15 +128,13 @@ MonoBehaviour:
   editorData:
     _bezierPath:
       points:
-      - {x: -6.9380493, y: -0.10580635, z: 0}
-      - {x: -8.690849, y: -0.0029223561, z: 0}
-      - {x: 16.097443, y: 0.16112328, z: 0}
-      - {x: 17.096985, y: 0.1346426, z: 0}
-      - {x: 18.096527, y: 0.108161926, z: 0}
-      - {x: -5.1852493, y: -0.20869035, z: 0}
-      isClosed: 1
+      - {x: -2, y: 0, z: 0}
+      - {x: -1, y: 0.5, z: 0}
+      - {x: 1, y: -0.5, z: 0}
+      - {x: 2, y: 0, z: 0}
+      isClosed: 0
       space: 1
-      controlMode: 1
+      controlMode: 0
       autoControlLength: 0.3
       boundsUpToDate: 0
       bounds:
@@ -146,7 +144,7 @@ MonoBehaviour:
       - 0
       - 0
       globalNormalsAngle: 0
-      flipNormals: 1
+      flipNormals: 0
     vertexPathUpToDate: 0
     vertexPathMaxAngleError: 0.3
     vertexPathMinVertexSpacing: 0.01
@@ -237,9 +235,8 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 6
-  m_Sprite: {fileID: 8739522121962546047, guid: 808a3bfc98a979245a0b547cfa802129,
-    type: 3}
+  m_SortingOrder: 1
+  m_Sprite: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -247,7 +244,7 @@ SpriteRenderer:
   m_Size: {x: 2.81, y: 6.93}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &8833704314658893297
@@ -311,12 +308,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c8f342c19721cf9468dccf20a708ea31, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dirRight: 1
   spriteHolder: {fileID: 8463558783000538012}
+  poteau: {fileID: 2391069181860069467}
+  layer: 0
+  dirRight: 1
+  isMoving: 1
   baseSpriteIsRight: 0
   goingRight: 1
   speed: 2
   maxTimer: 1.5
   minTimer: 0.5
-  timer: 0
-  goingUp: 1
