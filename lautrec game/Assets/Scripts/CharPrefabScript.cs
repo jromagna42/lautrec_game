@@ -1,6 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using PathCreation;
+using PathCreation.Examples;
 
 
 public class CharPrefabScript : MonoBehaviour
@@ -19,6 +21,9 @@ public class CharPrefabScript : MonoBehaviour
     public bigLayer layer;
     public bool dirRight = true;
     public bool isMoving = true;
+
+    public PathFollower pf;
+    public bool canMoveUp = true;
 
     //CHAR DIRECTION
     public bool baseSpriteIsRight = true;

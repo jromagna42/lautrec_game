@@ -46,6 +46,7 @@ SpriteRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -145,7 +146,7 @@ MonoBehaviour:
       - 0
       globalNormalsAngle: 0
       flipNormals: 0
-    vertexPathUpToDate: 0
+    vertexPathUpToDate: 1
     vertexPathMaxAngleError: 0.3
     vertexPathMinVertexSpacing: 0.01
     showTransformTool: 1
@@ -212,6 +213,7 @@ SpriteRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -296,6 +298,8 @@ MonoBehaviour:
   pathCreator: {fileID: 5150177939768762790}
   endOfPathInstruction: 1
   speed: 5
+  canMoveUp: 1
+  canRot: 0
 --- !u!114 &8833704314658893298
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -313,6 +317,8 @@ MonoBehaviour:
   layer: 0
   dirRight: 1
   isMoving: 1
+  pf: {fileID: 0}
+  canMoveUp: 1
   baseSpriteIsRight: 0
   goingRight: 1
   speed: 2

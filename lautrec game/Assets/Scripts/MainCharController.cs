@@ -10,7 +10,6 @@ public class MainCharController : MonoBehaviour
     public float speed = 5;
     
     public GameObject spriteHolder;
-    float lastXPos = 0;
 
     Rigidbody2D rb;
 

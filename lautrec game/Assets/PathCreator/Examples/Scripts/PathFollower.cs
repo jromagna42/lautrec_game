@@ -10,6 +10,8 @@ namespace PathCreation.Examples
         public EndOfPathInstruction endOfPathInstruction;
         public float speed = 5;
         float distanceTravelled;
+        public bool canMoveUp = true;
+        public bool canRot = true;
 
         void Start() {
             if (pathCreator != null)
@@ -24,8 +26,14 @@ namespace PathCreation.Examples
             if (pathCreator != null)
             {
                 distanceTravelled += speed * Time.deltaTime;
-                transform.position = pathCreator.path.GetPointAtDistance(distanceTravelled, endOfPathInstruction);
-               // transform.rotation = pathCreator.path.GetRotationAtDistance(distanceTravelled, endOfPathInstruction);
+                Vector3 nextPoint = pathCreator.path.GetPointAtDistance(distanceTravelled, endOfPathInstruction);
+                if (canMoveUp == false)
+                {
+                    nextPoint.y = transform.position.y;
+                }
+                transform.position = nextPoint;
+                if (canRot == true)
+                    transform.rotation = pathCreator.path.GetRotationAtDistance(distanceTravelled, endOfPathInstruction);
             }
         }
 
