@@ -10,6 +10,7 @@ public class MainCharController : MonoBehaviour
     public float speed = 5;
     
     public GameObject spriteHolder;
+    CapsuleCollider2D coll;
 
     Rigidbody2D rb;
 
@@ -33,8 +34,10 @@ public class MainCharController : MonoBehaviour
         cam = Camera.main;
         rb = GetComponent<Rigidbody2D>();
         rb.velocity = Vector2.zero;
-        mouseYMax = upWall.transform.position.y - 0.5f - 2.5f;
-        mouseYMin = downWall.transform.position.y + 0.5f + 2.5f;
+        coll = GetComponent<CapsuleCollider2D>();
+       
+        mouseYMax = upWall.transform.position.y -  upWall.GetComponent<BoxCollider2D>().size.y / 2 - coll.size.y / 2;
+        mouseYMin = downWall.transform.position.y +  downWall.GetComponent<BoxCollider2D>().size.y / 2 + coll.size.y / 2;
     }
 
 
