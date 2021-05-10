@@ -466,10 +466,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentState: 1
+  nameText: {fileID: 1406741327}
   baseSpriteIsRight: 0
+  isRight: 0
   image: {fileID: 328792532}
   imageTr: {fileID: 328792531}
-  isRight: 0
   lowerBound: 252.4
   LateralPos: 347
 --- !u!1 &935619785

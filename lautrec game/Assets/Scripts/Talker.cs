@@ -10,16 +10,18 @@ public class Talker : MonoBehaviour
     public enum TalkerState { Talker, Neutral, Listen };
     public TalkerState currentState = TalkerState.Neutral;
 
-    public bool baseSpriteIsRight = true;
+    public Text nameText;
 
+    public bool baseSpriteIsRight = true;
+    public bool isRight = false;
     public Image image;
     public RectTransform imageTr;
     RectTransform tr;
 
-    public bool isRight = false;
+
+
     public float lowerBound = 210;
     public float LateralPos = 210;
-
     float yPos;
     float xPos;
 
