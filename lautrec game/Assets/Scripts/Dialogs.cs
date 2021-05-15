@@ -19,6 +19,7 @@ public class Dialogs : ScriptableObject
     [SerializeField]
     public List<DialogTag> tagList = new List<DialogTag>();
 
+    [HideInInspector]
     public List<DialogContainer> DList = new List<DialogContainer>();
     // public struct dialBox
     // {

@@ -5,17 +5,19 @@ using UnityEngine;
 
 public class DialogContainer : ScriptableObject
 {
-    public List<string> text = new  List<string>();
+    public List<string> text = new List<string>();
     public List<Dialogs.DialogTag> blockFlag = new List<Dialogs.DialogTag>();
     public List<Dialogs.DialogTag> setFlag = new List<Dialogs.DialogTag>();
     public bool readOnce;
     public bool alreadyRead;
-    public bool showDial;
+
     public bool showBlock;
     public bool showSet;
 
-
-    private void Start() {
+    public bool showDial;
+    public bool delDial;
+    private void Start()
+    {
         Debug.Log("im born dialog container");
     }
 }
