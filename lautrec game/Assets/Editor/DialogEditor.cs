@@ -4,8 +4,11 @@ using UnityEngine;
 [CustomEditor(typeof(Dialogs))]
 public class DialogEditor : Editor
 {
+    Dialogs d;
 
     GUIStyle[] gStyle = new GUIStyle[2];
+    GUIStyle plusStyle = new GUIStyle();
+    GUIStyle minusStyle = new GUIStyle();
     bool StyleSet = true;
 
     private Texture2D MakeTex(int width, int height, Color col)
@@ -22,6 +25,18 @@ public class DialogEditor : Editor
         return result;
     }
 
+    // public static Texture2D textureFromSprite(Sprite sprite)
+    // {
+    //     Texture2D newText = new Texture2D((int)sprite.rect.width, (int)sprite.rect.height);
+    //     Color[] newColors = sprite.texture.GetPixels((int)sprite.textureRect.x,
+    //                                                  (int)sprite.textureRect.y,
+    //                                                  (int)sprite.textureRect.width,
+    //                                                  (int)sprite.textureRect.height);
+    //     newText.SetPixels(newColors);
+    //     newText.Apply();
+    //     return newText;
+    // }
+
     void SetDemStyle()
     {
         gStyle[0] = new GUIStyle();
@@ -30,14 +45,36 @@ public class DialogEditor : Editor
         gStyle[1].margin = new RectOffset(0, 0, 20, 20);
         gStyle[0].normal.background = MakeTex(200, 1, Color.grey);
         gStyle[1].normal.background = MakeTex(200, 1, new Color32(80, 80, 80, 255));
+        // if (plusStyle == null)
+        //     plusStyle = new GUIStyle();
+        // if (minusStyle == null)
+        //     plusStyle = new GUIStyle();
+        // plusStyle.normal.background = textureFromSprite(d.plus);
+        //minusStyle.normal.background = textureFromSprite(d.minus);
         StyleSet = false;
     }
 
     void ShowSingleDialog(Dialogs d, int i)
     {
+        bool addText = false;
+        addText = GUILayout.Button("add textbox");
+        if (addText == true)
+        {
+            d.DList[i].text.Add("");
+            addText = false;
+        }
         for (int j = 0; j < d.DList[i].text.Count; j++)
         {
-            d.DList[i].text[j] = EditorGUILayout.TextField("text" + j, d.DList[i].text[j]);
+            GUILayout.BeginHorizontal();
+            d.DList[i].text[j] = EditorGUILayout.TextArea(/*"text" + j,*/ d.DList[i].text[j]);
+            d.DList[i].delText = GUILayout.Button("-", GUILayout.MaxWidth(20));
+            if (d.DList[i].delText == true)
+            {
+                d.DList[i].text.RemoveAt(j);
+                d.DList[i].delText = false;
+                j = 0;
+            }
+            GUILayout.EndHorizontal();
         }
         EditorGUILayout.BeginHorizontal();
         d.DList[i].readOnce = EditorGUILayout.Toggle("read once:", d.DList[i].readOnce, GUILayout.MaxWidth(300));
@@ -57,12 +94,12 @@ public class DialogEditor : Editor
 
     public override void OnInspectorGUI()
     {
+        if (StyleSet == true)
+            SetDemStyle();
         base.OnInspectorGUI();
 
         StyleSet = GUILayout.Button("reset style");
-        if (StyleSet == true)
-            SetDemStyle();
-        Dialogs d = (Dialogs)target;
+        d = (Dialogs)target;
         bool addDial = false;
         addDial = GUILayout.Button("add dialog");
         if (addDial == true)

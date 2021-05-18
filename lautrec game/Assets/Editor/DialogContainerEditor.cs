@@ -7,7 +7,7 @@ using UnityEngine;
     {
         public override void OnInspectorGUI()
         {
-            Debug.Log("gui update start");
+            //Debug.Log("gui update start");
             base.OnInspectorGUI();
 
         }

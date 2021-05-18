@@ -6,6 +6,9 @@ using System;
 [CreateAssetMenuAttribute(fileName = "NewDialog", menuName = "Dialog")]
 public class Dialogs : ScriptableObject
 {
+    public Sprite plus;
+    public Sprite minus;
+
     public GameObject player;
     public GameObject[] speakers = new GameObject[2];
 
@@ -21,6 +24,7 @@ public class Dialogs : ScriptableObject
 
     [HideInInspector]
     public List<DialogContainer> DList = new List<DialogContainer>();
+
     // public struct dialBox
     // {
     //     public string[] text;
