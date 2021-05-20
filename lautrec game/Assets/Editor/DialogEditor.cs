@@ -1,5 +1,6 @@
 using UnityEditor;
 using UnityEngine;
+using DialogNameSpace;
 
 [CustomEditor(typeof(Dialogs))]
 public class DialogEditor : Editor
@@ -54,42 +55,43 @@ public class DialogEditor : Editor
         StyleSet = false;
     }
 
-    void ShowSingleDialog(Dialogs d, int i)
+    DialogNameSpace.Dialogs.DialogContainer ShowSingleDialog(DialogNameSpace.Dialogs.DialogContainer t, int i)
     {
         bool addText = false;
         addText = GUILayout.Button("add textbox");
         if (addText == true)
         {
-            d.DList[i].text.Add("");
+            t.text.Add("");
             addText = false;
         }
-        for (int j = 0; j < d.DList[i].text.Count; j++)
+        for (int j = 0; j < t.text.Count; j++)
         {
             GUILayout.BeginHorizontal();
-            d.DList[i].text[j] = EditorGUILayout.TextArea(/*"text" + j,*/ d.DList[i].text[j]);
-            d.DList[i].delText = GUILayout.Button("-", GUILayout.MaxWidth(20));
-            if (d.DList[i].delText == true)
+            t.text[j] = EditorGUILayout.TextArea(/*"text" + j,*/ t.text[j]);
+            t.delText = GUILayout.Button("-", GUILayout.MaxWidth(20));
+            if (t.delText == true)
             {
-                d.DList[i].text.RemoveAt(j);
-                d.DList[i].delText = false;
+                t.text.RemoveAt(j);
+                t.delText = false;
                 j = 0;
             }
             GUILayout.EndHorizontal();
         }
         EditorGUILayout.BeginHorizontal();
-        d.DList[i].readOnce = EditorGUILayout.Toggle("read once:", d.DList[i].readOnce, GUILayout.MaxWidth(300));
+        t.readOnce = EditorGUILayout.Toggle("read once:", t.readOnce, GUILayout.MaxWidth(300));
         GUILayout.FlexibleSpace();
         EditorGUILayout.EndHorizontal();
 
         EditorGUILayout.BeginHorizontal();
-        d.DList[i].showBlock = EditorGUILayout.Toggle("showBlock:", d.DList[i].showBlock, GUILayout.MaxWidth(300));
+        t.showBlock = EditorGUILayout.Toggle("showBlock:", t.showBlock, GUILayout.MaxWidth(300));
         GUILayout.FlexibleSpace();
         EditorGUILayout.EndHorizontal();
 
         EditorGUILayout.BeginHorizontal();
-        d.DList[i].showSet = EditorGUILayout.Toggle("showSet:", d.DList[i].showSet, GUILayout.MaxWidth(300));
+        t.showSet = EditorGUILayout.Toggle("showSet:", t.showSet, GUILayout.MaxWidth(300));
         GUILayout.FlexibleSpace();
         EditorGUILayout.EndHorizontal();
+        return t;
     }
 
     public override void OnInspectorGUI()
@@ -105,13 +107,14 @@ public class DialogEditor : Editor
         if (addDial == true)
         {
             addDial = false;
-            d.DList.Add(ScriptableObject.CreateInstance("DialogContainer") as DialogContainer);
+            d.DList.Add(d.NewDialogContainer());
         }
         for (int i = 0; i < d.DList.Count; i++)
         {
+            DialogNameSpace.Dialogs.DialogContainer tmpList = d.DList[i];
             //Color[] GUIcolor = new Color[]{Color.red, Color.grey};//{new Color(80f, 80f, 80f, 255f), new Color(100f, 100f, 100f, 255f)};
-            if (!d.DList[i])
-                d.DList[i] = ScriptableObject.CreateInstance("DialogContainer") as DialogContainer;
+            // if (tmp == null)
+            //     d.DList[i] = d.NewDialogContainer();
 
             if (i % 2 == 0)
                 GUILayout.BeginVertical(gStyle[0]);
@@ -123,9 +126,9 @@ public class DialogEditor : Editor
 
             bool delDial = false;
             EditorGUILayout.BeginHorizontal();
-            d.DList[i].showDial = EditorGUILayout.Foldout(d.DList[i].showDial, "dialog : " + i);
+            tmpList.showDial = EditorGUILayout.Foldout(d.DList[i].showDial, "dialog : " + i);
             EditorGUILayout.BeginVertical(GUILayout.MaxWidth(300));
-            d.DList[i].delDial = EditorGUILayout.Foldout(d.DList[i].delDial, "delete dialog");
+            tmpList.delDial = EditorGUILayout.Foldout(d.DList[i].delDial, "delete dialog");
             if (d.DList[i].delDial)
                 delDial = GUILayout.Button("delete dialog");
             if (delDial == true)
@@ -137,10 +140,15 @@ public class DialogEditor : Editor
             EditorGUILayout.EndVertical();
             EditorGUILayout.EndHorizontal();
             if (d.DList[i].showDial)
-                ShowSingleDialog(d, i);
+                tmpList = ShowSingleDialog(tmpList, i);
             GUILayout.EndVertical();
+            d.DList[i] = tmpList;
         }
-
+        if (GUILayout.Button("Save"))
+            {          
+                EditorUtility.SetDirty(d);
+                AssetDatabase.SaveAssets();
+            }
     }
 }
 

@@ -3,53 +3,61 @@ using System.Collections.Generic;
 using UnityEngine;
 using System;
 
-[CreateAssetMenuAttribute(fileName = "NewDialog", menuName = "Dialog")]
-public class Dialogs : ScriptableObject
+namespace DialogNameSpace
 {
-    public Sprite plus;
-    public Sprite minus;
-
-    public GameObject player;
-    public GameObject[] speakers = new GameObject[2];
-
-    [Serializable]
-    public struct DialogTag
+    [CreateAssetMenuAttribute(fileName = "NewDialog", menuName = "Dialog")]
+    public class Dialogs : ScriptableObject
     {
-        public string tagName;
-        public bool tagSet;
+        public Sprite plus;
+        public Sprite minus;
+
+        public GameObject player;
+        public GameObject[] speakers = new GameObject[2];
+
+        [Serializable]
+        public struct DialogTag
+        {
+            public string tagName;
+            public bool tagSet;
+        }
+
+        [SerializeField]
+        public List<DialogTag> tagList = new List<DialogTag>();
+
+        [HideInInspector][SerializeField]
+        public List<DialogContainer> DList = new List<DialogContainer>();
+
+        [Serializable]
+        public struct DialogContainer
+        {
+            public List<string> text;
+            public List<Dialogs.DialogTag> blockFlag;
+            public List<Dialogs.DialogTag> setFlag;
+
+            public bool readOnce;
+
+            [HideInInspector]
+            public bool alreadyRead;
+
+            // EDITOR VALUE
+            public bool showDial;
+            public bool delDial;
+
+            public bool showBlock;
+            public bool showSet;
+            public bool showText;
+            public bool delText;
+        }
+
+        public DialogContainer NewDialogContainer()
+        {
+            DialogContainer tmp = new DialogContainer();
+
+            tmp.text = new List<string>();
+            tmp.blockFlag = new List<Dialogs.DialogTag>();
+            tmp.setFlag = new List<Dialogs.DialogTag>();
+            return tmp;
+        }
+
     }
-
-    [SerializeField]
-    public List<DialogTag> tagList = new List<DialogTag>();
-
-    [HideInInspector]
-    public List<DialogContainer> DList = new List<DialogContainer>();
-
-    // public struct dialBox
-    // {
-    //     public string[] text;
-    //     public DialogTag[] blockFlag;
-    //     public DialogTag[] setFlag;
-    //     public bool readOnce;
-    //     public bool alreadyRead;
-    //     public bool showDial;
-    //     public bool showBlock;
-    //     public bool showSet;
-
-
-    //     public dialBox(string[] i,DialogTag[] j,DialogTag[] k,bool l,bool m, bool n, bool o, bool p)
-    //     {
-    //         this.text = i;
-    //         this.blockFlag = j;
-    //         this.setFlag = k;
-    //         this.readOnce = l;
-    //         this.alreadyRead = m;
-    //         this.showDial = n;
-    //         this.showBlock = o;
-    //         this.showSet = p;
-    //     }
-
-    // }
-
-
 }

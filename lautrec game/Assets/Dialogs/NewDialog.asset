@@ -24,8 +24,27 @@ MonoBehaviour:
   - tagName: 
     tagSet: 0
   DList:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - text:
+    - ergewrgerg
+    - ggg
+    blockFlag: []
+    setFlag: []
+    readOnce: 0
+    alreadyRead: 0
+    showDial: 1
+    delDial: 0
+    showBlock: 0
+    showSet: 0
+    showText: 0
+    delText: 0
+  - text: []
+    blockFlag: []
+    setFlag: []
+    readOnce: 0
+    alreadyRead: 0
+    showDial: 0
+    delDial: 0
+    showBlock: 0
+    showSet: 0
+    showText: 0
+    delText: 0
