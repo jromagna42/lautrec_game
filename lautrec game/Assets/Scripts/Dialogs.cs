@@ -14,25 +14,48 @@ namespace DialogNameSpace
         public GameObject player;
         public GameObject[] speakers = new GameObject[2];
 
+        [HideInInspector]
+        public bool updatedFlag = false;
+
         [Serializable]
-        public struct DialogTag
+        public struct DialogFlag
         {
-            public string tagName;
-            public bool tagSet;
+            public string flagName;
+            public bool flagActive;
+            
+            [HideInInspector]
+            public bool useFlag;
+            [HideInInspector]
+            public bool setflag;
+
+
+            [HideInInspector]
+            public bool delflag;
+            [HideInInspector]
+            public bool showflag;
+
+            public void CopyValue(DialogFlag newdf)
+            {
+                flagName = newdf.flagName;
+                flagActive = newdf.flagActive;
+                showflag = newdf.showflag;
+                setflag = newdf.setflag;
+            }
         }
 
+        [HideInInspector]
         [SerializeField]
-        public List<DialogTag> tagList = new List<DialogTag>();
+        public List<DialogFlag> flagList = new List<DialogFlag>();
 
-        [HideInInspector][SerializeField]
+        [HideInInspector]
+        [SerializeField]
         public List<DialogContainer> DList = new List<DialogContainer>();
 
         [Serializable]
         public struct DialogContainer
         {
             public List<string> text;
-            public List<Dialogs.DialogTag> blockFlag;
-            public List<Dialogs.DialogTag> setFlag;
+            public List<Dialogs.DialogFlag> flag;
 
             public bool readOnce;
 
@@ -43,19 +66,19 @@ namespace DialogNameSpace
             public bool showDial;
             public bool delDial;
 
-            public bool showBlock;
-            public bool showSet;
+            public bool showFlag;
+
             public bool showText;
             public bool delText;
         }
+
 
         public DialogContainer NewDialogContainer()
         {
             DialogContainer tmp = new DialogContainer();
 
             tmp.text = new List<string>();
-            tmp.blockFlag = new List<Dialogs.DialogTag>();
-            tmp.setFlag = new List<Dialogs.DialogTag>();
+            tmp.flag = new List<Dialogs.DialogFlag>();
             return tmp;
         }
 

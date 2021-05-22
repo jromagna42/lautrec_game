@@ -18,33 +18,139 @@ MonoBehaviour:
   speakers:
   - {fileID: 0}
   - {fileID: 0}
-  tagList:
-  - tagName: 
-    tagSet: 0
-  - tagName: 
-    tagSet: 0
+  updatedFlag: 1
+  flagList:
+  - flagName: default
+    flagActive: 0
+    useFlag: 0
+    setflag: 0
+    delflag: 0
+    showflag: 0
+  - flagName: sub1
+    flagActive: 0
+    useFlag: 0
+    setflag: 0
+    delflag: 0
+    showflag: 0
+  - flagName: sub2
+    flagActive: 0
+    useFlag: 0
+    setflag: 0
+    delflag: 0
+    showflag: 0
   DList:
   - text:
-    - ergewrgerg
-    - ggg
-    blockFlag: []
-    setFlag: []
-    readOnce: 0
-    alreadyRead: 0
-    showDial: 1
-    delDial: 0
-    showBlock: 0
-    showSet: 0
-    showText: 0
-    delText: 0
-  - text: []
-    blockFlag: []
-    setFlag: []
+    - '
+
+
+
+'
+    - 
+    flag:
+    - flagName: default
+      flagActive: 0
+      useFlag: 0
+      setflag: 0
+      delflag: 0
+      showflag: 0
+    - flagName: sub1
+      flagActive: 0
+      useFlag: 0
+      setflag: 0
+      delflag: 0
+      showflag: 0
+    - flagName: sub2
+      flagActive: 0
+      useFlag: 0
+      setflag: 0
+      delflag: 0
+      showflag: 0
     readOnce: 0
     alreadyRead: 0
     showDial: 0
     delDial: 0
-    showBlock: 0
-    showSet: 0
+    showFlag: 0
+    showText: 0
+    delText: 0
+  - text:
+    - 
+    flag:
+    - flagName: default
+      flagActive: 0
+      useFlag: 0
+      setflag: 0
+      delflag: 0
+      showflag: 0
+    - flagName: sub1
+      flagActive: 0
+      useFlag: 0
+      setflag: 0
+      delflag: 0
+      showflag: 0
+    - flagName: sub2
+      flagActive: 0
+      useFlag: 0
+      setflag: 0
+      delflag: 0
+      showflag: 0
+    readOnce: 0
+    alreadyRead: 0
+    showDial: 0
+    delDial: 0
+    showFlag: 0
+    showText: 0
+    delText: 0
+  - text: []
+    flag:
+    - flagName: default
+      flagActive: 0
+      useFlag: 0
+      setflag: 0
+      delflag: 0
+      showflag: 0
+    - flagName: sub1
+      flagActive: 0
+      useFlag: 0
+      setflag: 0
+      delflag: 0
+      showflag: 0
+    - flagName: sub2
+      flagActive: 0
+      useFlag: 0
+      setflag: 0
+      delflag: 0
+      showflag: 0
+    readOnce: 0
+    alreadyRead: 0
+    showDial: 0
+    delDial: 0
+    showFlag: 0
+    showText: 0
+    delText: 0
+  - text: []
+    flag:
+    - flagName: default
+      flagActive: 0
+      useFlag: 0
+      setflag: 0
+      delflag: 0
+      showflag: 0
+    - flagName: sub1
+      flagActive: 0
+      useFlag: 0
+      setflag: 0
+      delflag: 0
+      showflag: 0
+    - flagName: sub2
+      flagActive: 0
+      useFlag: 0
+      setflag: 0
+      delflag: 0
+      showflag: 0
+    readOnce: 0
+    alreadyRead: 0
+    showDial: 0
+    delDial: 0
+    showFlag: 0
     showText: 0
     delText: 0
