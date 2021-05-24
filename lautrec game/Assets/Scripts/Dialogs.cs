@@ -26,7 +26,7 @@ namespace DialogNameSpace
             [HideInInspector]
             public bool useFlag;
             [HideInInspector]
-            public bool setflag;
+            public bool setFlag;
 
 
             [HideInInspector]
@@ -34,13 +34,6 @@ namespace DialogNameSpace
             [HideInInspector]
             public bool showflag;
 
-            public void CopyValue(DialogFlag newdf)
-            {
-                flagName = newdf.flagName;
-                flagActive = newdf.flagActive;
-                showflag = newdf.showflag;
-                setflag = newdf.setflag;
-            }
         }
 
         [HideInInspector]

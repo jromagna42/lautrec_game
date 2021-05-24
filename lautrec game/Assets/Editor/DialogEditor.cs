@@ -71,21 +71,40 @@ public class DialogEditor : Editor
     }
 
 
-    public void SetAllFlags()
+    public void UpdateFlags()
     {
         for (int i = 0; i < d.DList.Count; i++)
         {
-            Dialogs.DialogContainer dcTmp = d.DList[i];
-
-            dcTmp.flag = new List<Dialogs.DialogFlag>(d.flagList);
+            Dialogs.DialogContainer tmpdc = d.DList[i];
+            List<Dialogs.DialogFlag> tmpflag = new List<Dialogs.DialogFlag>(d.flagList);
             foreach (Dialogs.DialogFlag df in d.DList[i].flag)
             {
-                int j;
-                if ((j = dcTmp.flag.FindIndex(x => x.flagName == df.flagName)) != -1)
-                    dcTmp.flag[j].CopyValue(df);
+                int j = tmpflag.FindIndex(x => x.flagName == df.flagName);
+                if (j != -1)
+                {
+                    // if (df.setFlag == true || df.useFlag == true)
+                    // {
+                    //     Debug.Log("copy les value de : " + j);
+                    //     Debug.Log("name : " + df.flagName + "\n"
+                    //     + " use : " + df.useFlag + "\n"
+                    //     + " set : " + df.setFlag);
+                    // }
+                    tmpflag[j] = CopyFlagValue(tmpflag[j], df);
+                }
             }
-            d.DList[i] = dcTmp;
+            tmpdc.flag = tmpflag;
+            d.DList.RemoveAt(i);
+            d.DList.Insert(i, tmpdc);
         }
+    }
+
+    Dialogs.DialogFlag CopyFlagValue(Dialogs.DialogFlag targetFlag, Dialogs.DialogFlag sourceFlag)
+    {
+        targetFlag.flagName = sourceFlag.flagName;
+        targetFlag.flagActive = sourceFlag.flagActive;
+        targetFlag.useFlag = sourceFlag.useFlag;
+        targetFlag.setFlag = sourceFlag.setFlag;
+        return targetFlag;
     }
 
     Dialogs.DialogFlag ShowSingleFlag(Dialogs.DialogFlag f, bool main)
@@ -93,7 +112,14 @@ public class DialogEditor : Editor
         GUILayout.BeginHorizontal();
         string tmp = f.flagName;
         if (main)
+        {
             f.flagName = EditorGUILayout.TextField(f.flagName);
+            if (tmp != f.flagName)
+            {
+                d.updatedFlag = false;
+                UpdateFlags();
+            }
+        }
         else
             EditorGUILayout.LabelField(f.flagName, GUILayout.MaxWidth(60));
         if (main == true)
@@ -102,14 +128,13 @@ public class DialogEditor : Editor
         {
             EditorGUIUtility.labelWidth = 30;
             f.useFlag = EditorGUILayout.Toggle("use:", f.useFlag);
-            f.setflag = EditorGUILayout.Toggle("set:", f.setflag);
+            f.setFlag = EditorGUILayout.Toggle("set:", f.setFlag);
 
             GUILayout.FlexibleSpace();
             EditorGUIUtility.labelWidth = 0;
         }
         GUILayout.EndHorizontal();
-        if (tmp != f.flagName)
-            d.updatedFlag = false;
+
 
         return f;
     }
@@ -158,6 +183,8 @@ public class DialogEditor : Editor
         return t;
     }
 
+
+
     void ShowSection_Flags(List<Dialogs.DialogFlag> fl, bool main)
     {
         if (main)
@@ -168,7 +195,8 @@ public class DialogEditor : Editor
             {
                 addFlag = false;
                 d.flagList.Add(new Dialogs.DialogFlag());
-                d.updatedFlag = false;
+                UpdateFlags();
+                return;
             }
         }
         for (int i = 0; i < d.flagList.Count; i++)
@@ -183,7 +211,7 @@ public class DialogEditor : Editor
                 if (d.flagList[i].delflag == true)
                 {
                     d.flagList.Remove(d.flagList[i]);
-                    d.updatedFlag = false;
+                    UpdateFlags();
                 }
             }
         }
@@ -197,6 +225,7 @@ public class DialogEditor : Editor
         {
             addDial = false;
             d.DList.Add(d.NewDialogContainer());
+            UpdateFlags();
         }
         for (int i = 0; i < d.DList.Count; i++)
         {
@@ -234,7 +263,7 @@ public class DialogEditor : Editor
             SetDemStyle();
         if (d.updatedFlag == false)
         {
-            SetAllFlags();
+            UpdateFlags();
             d.updatedFlag = true;
         }
         base.OnInspectorGUI();
