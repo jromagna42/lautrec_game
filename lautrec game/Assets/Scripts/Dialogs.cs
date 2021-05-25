@@ -14,6 +14,7 @@ namespace DialogNameSpace
         public GameObject player;
         public GameObject[] speakers = new GameObject[2];
 
+
         [HideInInspector]
         public bool updatedFlag = false;
 
@@ -64,7 +65,6 @@ namespace DialogNameSpace
             public bool showText;
             public bool delText;
         }
-
 
         public DialogContainer NewDialogContainer()
         {

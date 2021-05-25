@@ -57,7 +57,7 @@ public class DialogEditor : Editor
         gStyle[2].normal.background = MakeTex(200, 1, new Color32(60, 60, 60, 255));
 
         gStyle[3] = new GUIStyle();
-        gStyle[3].margin = new RectOffset(30, 30, 0, 0);
+        gStyle[3].margin = new RectOffset(30, 30, 0, 10);
 
         // if (plusStyle == null)
 
@@ -113,6 +113,8 @@ public class DialogEditor : Editor
         string tmp = f.flagName;
         if (main)
         {
+            EditorGUIUtility.labelWidth = 50;
+            f.flagActive = EditorGUILayout.Toggle("active " , f.flagActive, GUILayout.MaxWidth(90));
             f.flagName = EditorGUILayout.TextField(f.flagName);
             if (tmp != f.flagName)
             {

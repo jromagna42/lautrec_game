@@ -21,7 +21,7 @@ MonoBehaviour:
   updatedFlag: 1
   flagList:
   - flagName: default
-    flagActive: 0
+    flagActive: 1
     useFlag: 0
     setFlag: 0
     delflag: 0
@@ -40,13 +40,41 @@ MonoBehaviour:
     showflag: 0
   DList:
   - text:
-    - 
+    - bonjour go to sub
     - 
     flag:
     - flagName: default
       flagActive: 0
+      useFlag: 1
+      setFlag: 0
+      delflag: 0
+      showflag: 0
+    - flagName: sub1
+      flagActive: 0
+      useFlag: 0
+      setFlag: 1
+      delflag: 0
+      showflag: 0
+    - flagName: sub2
+      flagActive: 0
       useFlag: 0
       setFlag: 0
+      delflag: 0
+      showflag: 0
+    readOnce: 0
+    alreadyRead: 0
+    showDial: 1
+    delDial: 0
+    showFlag: 1
+    showText: 0
+    delText: 0
+  - text:
+    - text 2
+    flag:
+    - flagName: default
+      flagActive: 0
+      useFlag: 1
+      setFlag: 1
       delflag: 0
       showflag: 0
     - flagName: sub1
@@ -65,6 +93,90 @@ MonoBehaviour:
     alreadyRead: 0
     showDial: 1
     delDial: 0
-    showFlag: 0
+    showFlag: 1
+    showText: 0
+    delText: 0
+  - text:
+    - texxztes3
+    flag:
+    - flagName: default
+      flagActive: 1
+      useFlag: 1
+      setFlag: 1
+      delflag: 0
+      showflag: 0
+    - flagName: sub1
+      flagActive: 0
+      useFlag: 0
+      setFlag: 0
+      delflag: 0
+      showflag: 0
+    - flagName: sub2
+      flagActive: 0
+      useFlag: 0
+      setFlag: 0
+      delflag: 0
+      showflag: 0
+    readOnce: 0
+    alreadyRead: 0
+    showDial: 1
+    delDial: 0
+    showFlag: 1
+    showText: 0
+    delText: 0
+  - text:
+    - sub text 1
+    flag:
+    - flagName: default
+      flagActive: 1
+      useFlag: 0
+      setFlag: 0
+      delflag: 0
+      showflag: 0
+    - flagName: sub1
+      flagActive: 0
+      useFlag: 1
+      setFlag: 0
+      delflag: 0
+      showflag: 0
+    - flagName: sub2
+      flagActive: 0
+      useFlag: 0
+      setFlag: 1
+      delflag: 0
+      showflag: 0
+    readOnce: 0
+    alreadyRead: 0
+    showDial: 1
+    delDial: 0
+    showFlag: 1
+    showText: 0
+    delText: 0
+  - text:
+    - sub 2
+    flag:
+    - flagName: default
+      flagActive: 1
+      useFlag: 0
+      setFlag: 1
+      delflag: 0
+      showflag: 0
+    - flagName: sub1
+      flagActive: 0
+      useFlag: 0
+      setFlag: 0
+      delflag: 0
+      showflag: 0
+    - flagName: sub2
+      flagActive: 0
+      useFlag: 0
+      setFlag: 0
+      delflag: 0
+      showflag: 0
+    readOnce: 0
+    alreadyRead: 0
+    showDial: 1
+    delDial: 0
+    showFlag: 1
     showText: 0
     delText: 0
