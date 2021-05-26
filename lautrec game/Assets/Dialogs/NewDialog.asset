@@ -40,8 +40,8 @@ MonoBehaviour:
     showflag: 0
   DList:
   - text:
-    - bonjour go to sub
-    - 
+    - bonjour monsieur
+    - la on va vers le sub 1
     flag:
     - flagName: default
       flagActive: 0
@@ -63,13 +63,13 @@ MonoBehaviour:
       showflag: 0
     readOnce: 0
     alreadyRead: 0
-    showDial: 1
+    showDial: 0
     delDial: 0
     showFlag: 1
     showText: 0
     delText: 0
   - text:
-    - text 2
+    - text 2 ca fait rien
     flag:
     - flagName: default
       flagActive: 0
@@ -91,13 +91,15 @@ MonoBehaviour:
       showflag: 0
     readOnce: 0
     alreadyRead: 0
-    showDial: 1
+    showDial: 0
     delDial: 0
     showFlag: 1
     showText: 0
     delText: 0
   - text:
     - texxztes3
+    - 'multiligne '
+    - mais on retourne ver le default
     flag:
     - flagName: default
       flagActive: 1
@@ -126,6 +128,7 @@ MonoBehaviour:
     delText: 0
   - text:
     - sub text 1
+    - go to sub 2
     flag:
     - flagName: default
       flagActive: 1
@@ -153,7 +156,7 @@ MonoBehaviour:
     showText: 0
     delText: 0
   - text:
-    - sub 2
+    - sub 2 go to default
     flag:
     - flagName: default
       flagActive: 1
@@ -169,7 +172,7 @@ MonoBehaviour:
       showflag: 0
     - flagName: sub2
       flagActive: 0
-      useFlag: 0
+      useFlag: 1
       setFlag: 0
       delflag: 0
       showflag: 0

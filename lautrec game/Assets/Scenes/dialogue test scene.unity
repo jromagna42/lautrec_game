@@ -740,6 +740,7 @@ MonoBehaviour:
   textBound: {fileID: 2567134265677680357}
   dialog: {fileID: 11400000, guid: 50586092ecfc3a34cb47c052032fd7f9, type: 2}
   upDial: 1
+  currentState: 0
   chosenDialog: []
   TextLineList: []
 --- !u!1 &6160378540204664854
