@@ -5,7 +5,12 @@ using UnityEngine;
 
 public class MainCharController : MonoBehaviour
 {
+    public Sprite dialogImage;
+    public string dialogName;
+
+
     public enum clickType {neutral, move, talk};
+    [HideInInspector]
     public clickType currentCT = clickType.neutral;
     public float speed = 5;
     

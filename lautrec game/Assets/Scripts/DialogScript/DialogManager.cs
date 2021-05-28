@@ -18,14 +18,60 @@ public class DialogManager : MonoBehaviour
     public bool upDial = true;
 
     public dialogState currentState = dialogState.multi;
-    public List<Dialogs.DialogContainer> chosenDialog;
-    public List<GameObject> TextLineList;
+    List<Dialogs.DialogContainer> chosenDialog;
+    List<GameObject> TextLineList;
 
     int singleDialIndex = 0;
 
+    GameObject playerTalker;
+    List<GameObject> NPCtalker = new List<GameObject>();
+
+
+    public static DialogManager Instance { get; private set; }
+    
+    void Awake()
+    {
+        if (Instance == null) { Instance = this; } else { Debug.Log("Warning: multiple " + this + " in scene!"); }
+        DontDestroyOnLoad(this);
+    }
+
     private void OnEnable()
     {
+        if (!playerTalker)
+            playerTalker = SpawnMainTalker(dialog.player);
+        NPCtalker.Clear();
+        foreach (GameObject speaker in dialog.speakers)
+        {
+            NPCtalker.Add(SpawnTalker(speaker));
+        }
+    }
+    // CharPrefabScript MCCtmp = source.GetComponent<CharPrefabScript>();
+    GameObject SpawnTalker(GameObject source)
+    {
+        GameObject go;
+        go = Instantiate(talkerBoxPrefab);
+        CharPrefabScript CPStmp = source.GetComponent<CharPrefabScript>();
+        Talker Ttmp = go.GetComponent<Talker>();
+        if (CPStmp.dialogImage)
+            Ttmp.image.sprite = CPStmp.dialogImage;
+        else
+            Ttmp.image.sprite = CPStmp.spriteHolder.GetComponent<SpriteRenderer>().sprite;
+        if (CPStmp.dialogName != "")
+            Ttmp.nameText.text = CPStmp.dialogName;
+        else
+            Ttmp.nameText.text = CPStmp.gameObject.name;
+        return go;
+    }
 
+    GameObject SpawnMainTalker(GameObject source)
+    {
+        GameObject go;
+        go = Instantiate(talkerBoxPrefab);
+        MainCharController MCCtmp = source.GetComponent<MainCharController>();
+        Talker Ttmp = go.GetComponent<Talker>();
+        Ttmp.image.sprite = MCCtmp.dialogImage;
+        Ttmp.nameText.text = MCCtmp.dialogName;
+        return go;
     }
 
     void SetNewFlags()

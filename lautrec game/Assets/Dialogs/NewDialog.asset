@@ -17,7 +17,6 @@ MonoBehaviour:
   player: {fileID: 0}
   speakers:
   - {fileID: 0}
-  - {fileID: 0}
   updatedFlag: 1
   flagList:
   - flagName: default

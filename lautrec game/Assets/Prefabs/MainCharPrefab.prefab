@@ -218,6 +218,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b59d130790e0beb4296ea68577e7d040, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  dialogImage: {fileID: -3431053023252435611, guid: d143d267c0c18334abf44c65daec4245,
+    type: 3}
+  dialogName: henri de toulouse-lautrec
   currentCT: 0
   speed: 5
   spriteHolder: {fileID: 6078259843958378458}
