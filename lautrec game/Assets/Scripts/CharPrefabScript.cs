@@ -8,8 +8,6 @@ using PathCreation.Examples;
 public class CharPrefabScript : MonoBehaviour
 {
 
-    public Sprite dialogImage;
-    public string dialogName;
     
     public enum bigLayer {back,middle,front};
 

@@ -114,7 +114,7 @@ public class DialogEditor : Editor
         if (main)
         {
             EditorGUIUtility.labelWidth = 50;
-            f.flagActive = EditorGUILayout.Toggle("active " , f.flagActive, GUILayout.MaxWidth(90));
+            f.flagActive = EditorGUILayout.Toggle("active ", f.flagActive, GUILayout.MaxWidth(90));
             f.flagName = EditorGUILayout.TextField(f.flagName);
             if (tmp != f.flagName)
             {
@@ -272,11 +272,7 @@ public class DialogEditor : Editor
         GUILayout.BeginVertical(GUILayout.MinHeight(30));
         GUILayout.FlexibleSpace();
         GUILayout.EndVertical();
-        if (GUILayout.Button("Save"))
-        {
-            EditorUtility.SetDirty(d);
-            AssetDatabase.SaveAssets();
-        }
+
         StyleSet = GUILayout.Button("reset style");
 
         showFlags = EditorGUILayout.Foldout(showFlags, "FLAGS");
@@ -290,6 +286,8 @@ public class DialogEditor : Editor
         if (showDialogs)
             ShowSection_Dialogs();
         GUILayout.EndVertical();
+        EditorUtility.SetDirty(d);
+        AssetDatabase.SaveAssets();
     }
 }
 

@@ -15,8 +15,11 @@ public class DialogManager : MonoBehaviour
     public RectTransform textBound;
     public Dialogs dialog;
 
+    public GameObject talkerMaster;
+
     public bool upDial = true;
 
+    [HideInInspector]
     public dialogState currentState = dialogState.multi;
     List<Dialogs.DialogContainer> chosenDialog;
     List<GameObject> TextLineList;
@@ -35,31 +38,31 @@ public class DialogManager : MonoBehaviour
         DontDestroyOnLoad(this);
     }
 
-    private void OnEnable()
+    public void DialogSetup(DialogHolder dc)
     {
         if (!playerTalker)
             playerTalker = SpawnMainTalker(dialog.player);
         NPCtalker.Clear();
-        foreach (GameObject speaker in dialog.speakers)
+        for (int i = 0; i < dc.talkerList.Count; i++)
         {
-            NPCtalker.Add(SpawnTalker(speaker));
+            NPCtalker.Add(SpawnTalker(dc, i));
         }
     }
     // CharPrefabScript MCCtmp = source.GetComponent<CharPrefabScript>();
-    GameObject SpawnTalker(GameObject source)
+    GameObject SpawnTalker(DialogHolder source, int i)
     {
         GameObject go;
         go = Instantiate(talkerBoxPrefab);
-        CharPrefabScript CPStmp = source.GetComponent<CharPrefabScript>();
+        
         Talker Ttmp = go.GetComponent<Talker>();
-        if (CPStmp.dialogImage)
-            Ttmp.image.sprite = CPStmp.dialogImage;
+        if (source.talkerList[i].image)
+            Ttmp.image.sprite = source.talkerList[i].image;
         else
-            Ttmp.image.sprite = CPStmp.spriteHolder.GetComponent<SpriteRenderer>().sprite;
-        if (CPStmp.dialogName != "")
-            Ttmp.nameText.text = CPStmp.dialogName;
+            Ttmp.image.sprite = source.gameObject.GetComponentInChildren<SpriteRenderer>().sprite;
+        if (source.talkerList[i].name != "")
+            Ttmp.nameText.text = source.talkerList[i].name;
         else
-            Ttmp.nameText.text = CPStmp.gameObject.name;
+            Ttmp.nameText.text = source.gameObject.name;
         return go;
     }
 
@@ -116,7 +119,8 @@ public class DialogManager : MonoBehaviour
         {
             Destroy(go);
         }
-        TextLineList.Clear();
+        if (TextLineList.Count != 0)
+            TextLineList.Clear();
     }
 
     void CreateTextLines(int i)

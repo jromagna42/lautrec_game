@@ -260,6 +260,7 @@ GameObject:
   - component: {fileID: 8833704314658893296}
   - component: {fileID: 8833704314658893299}
   - component: {fileID: 8833704314658893298}
+  - component: {fileID: 7588198088331347444}
   m_Layer: 0
   m_Name: GameObject
   m_TagString: Untagged
@@ -324,3 +325,19 @@ MonoBehaviour:
   speed: 2
   maxTimer: 1.5
   minTimer: 0.5
+--- !u!114 &7588198088331347444
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8833704314658893297}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 61a7f097622784a429c9e9f252193f1c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialog: {fileID: 11400000, guid: 50586092ecfc3a34cb47c052032fd7f9, type: 2}
+  talkerList:
+  - image: {fileID: 1183930424548388377, guid: 2b67d8cf07561154bb7e8814022ae0d4, type: 3}
+    name: dogo
