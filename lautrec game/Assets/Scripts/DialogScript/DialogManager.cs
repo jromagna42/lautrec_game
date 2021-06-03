@@ -7,6 +7,7 @@ using UnityEngine.UIElements;
 
 public class DialogManager : MonoBehaviour
 {
+    public bool dialogActive = false;
     public enum dialogState { multi, single };
 
     public GameObject talkerBoxPrefab;
@@ -22,7 +23,7 @@ public class DialogManager : MonoBehaviour
     [HideInInspector]
     public dialogState currentState = dialogState.multi;
     List<Dialogs.DialogContainer> chosenDialog;
-    List<GameObject> TextLineList;
+    List<GameObject> TextLineList = new List<GameObject>();
 
     int singleDialIndex = 0;
 
@@ -31,11 +32,15 @@ public class DialogManager : MonoBehaviour
 
 
     public static DialogManager Instance { get; private set; }
-    
+
     void Awake()
     {
         if (Instance == null) { Instance = this; } else { Debug.Log("Warning: multiple " + this + " in scene!"); }
         DontDestroyOnLoad(this);
+        if (dialogActive == false)
+        {
+            this.gameObject.SetActive(false);
+        }
     }
 
     public void DialogSetup(DialogHolder dc)
@@ -53,7 +58,7 @@ public class DialogManager : MonoBehaviour
     {
         GameObject go;
         go = Instantiate(talkerBoxPrefab);
-        
+
         Talker Ttmp = go.GetComponent<Talker>();
         if (source.talkerList[i].image)
             Ttmp.image.sprite = source.talkerList[i].image;
@@ -115,12 +120,14 @@ public class DialogManager : MonoBehaviour
 
     void DestroyOldTextLines()
     {
-        foreach (GameObject go in TextLineList)
-        {
-            Destroy(go);
-        }
         if (TextLineList.Count != 0)
+        {
+            foreach (GameObject go in TextLineList)
+            {
+                Destroy(go);
+            }
             TextLineList.Clear();
+        }
     }
 
     void CreateTextLines(int i)
@@ -136,22 +143,13 @@ public class DialogManager : MonoBehaviour
         {
             Vector3 textPos = new Vector3(textBound.position.x, yStartPos - j * yOffset, textBound.position.z);
             GameObject tmp = Instantiate(textLinePrefab, textPos, textBound.rotation, textBound);
+            tmp.GetComponent<TextLine>().textComponent = tmp.GetComponent<Text>();
             TextLineList.Add(tmp);
             j++;
         }
     }
 
-    void FillTextLines_Multi()
-    {
-        for (int i = 0; i < TextLineList.Count; i++)
-        {
-            TextLine tl;
-            tl = TextLineList[i].GetComponent<TextLine>();
-            tl.tc.text = chosenDialog[i].text[0];
-            tl.dialIndex = i;
-            tl.dm = this;
-        }
-    }
+
 
     public void TextLineClicked(int i)
     {
@@ -173,13 +171,26 @@ public class DialogManager : MonoBehaviour
                 singleDialIndex = 0;
             }
         }
+
+    }
+
+    void FillTextLines_Multi()
+    {
+        for (int i = 0; i < TextLineList.Count; i++)
+        {
+            TextLine tl;
+            tl = TextLineList[i].GetComponent<TextLine>();
+            tl.textComponent.text = chosenDialog[i].text[0];
+            tl.dialIndex = i;
+            tl.dm = this;
+        }
     }
 
     void FillTextLines_Single()
     {
         TextLine tl;
         tl = TextLineList[0].GetComponent<TextLine>();
-        tl.tc.text = chosenDialog[0].text[singleDialIndex];
+        tl.textComponent.text = chosenDialog[0].text[singleDialIndex];
         tl.dialIndex = 0;
         tl.dm = this;
     }
@@ -201,7 +212,11 @@ public class DialogManager : MonoBehaviour
 
     private void Update()
     {
-        if (upDial == true)
+        if (dialogActive == false)
+        {
+            this.gameObject.SetActive(false);
+        }
+        if (upDial == true && dialog != null)
         {
             switch (currentState)
             {

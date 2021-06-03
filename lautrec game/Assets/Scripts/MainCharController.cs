@@ -8,7 +8,7 @@ public class MainCharController : MonoBehaviour
     public Sprite dialogImage;
     public string dialogName;
 
-
+    public bool isTalking = false;
     public enum clickType {neutral, move, talk};
     [HideInInspector]
     public clickType currentCT = clickType.neutral;
@@ -32,6 +32,8 @@ public class MainCharController : MonoBehaviour
     Vector3 mousePoint;
 
     Camera cam;
+
+
 
     // Start is called before the first frame update
     void Start()
@@ -102,7 +104,7 @@ public class MainCharController : MonoBehaviour
     }
 
     private void Update() {
-        if (Input.GetMouseButtonDown(0))
+        if (Input.GetMouseButtonDown(0) && isTalking == false)
         {
             MouseLeftClick();
         }
