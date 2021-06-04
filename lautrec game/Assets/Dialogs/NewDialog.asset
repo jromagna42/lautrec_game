@@ -20,7 +20,7 @@ MonoBehaviour:
   updatedFlag: 1
   flagList:
   - flagName: default
-    flagActive: 1
+    flagActive: 0
     useFlag: 0
     setFlag: 0
     delflag: 0
@@ -32,7 +32,7 @@ MonoBehaviour:
     delflag: 0
     showflag: 0
   - flagName: sub2
-    flagActive: 0
+    flagActive: 1
     useFlag: 0
     setFlag: 0
     delflag: 0

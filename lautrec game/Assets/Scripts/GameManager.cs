@@ -5,7 +5,8 @@ using UnityEngine;
 public class GameManager : MonoBehaviour
 {
 
-    
+    public Texture2D dialogMouse;
+    public GameObject Player;
 
     public static GameManager Instance { get; private set; }
     private void Awake()

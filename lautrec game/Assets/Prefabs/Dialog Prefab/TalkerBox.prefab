@@ -134,6 +134,7 @@ MonoBehaviour:
   imageTr: {fileID: 2669093087444071559}
   lowerBound: 252.4
   LateralPos: 347
+  needUpdate: 0
 --- !u!1 &2669093088035872962
 GameObject:
   m_ObjectHideFlags: 0

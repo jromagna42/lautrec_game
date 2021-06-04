@@ -25,6 +25,8 @@ public class Talker : MonoBehaviour
     float yPos;
     float xPos;
 
+    public bool needUpdate = true;
+
     public struct StateValue
     {
         public Vector2 pos;
@@ -37,15 +39,15 @@ public class Talker : MonoBehaviour
             this.size = j;
             this.color = c;
         }
+        public static StateValue listen = new StateValue(new Vector2(0, 0), new Vector2(300, 300), new Color(76, 76, 76, 255));
+        public static StateValue neutral = new StateValue(new Vector2(0, 0), new Vector2(325, 325), new Color(255, 255, 255, 255));
+        public static StateValue talker = new StateValue(new Vector2(0, 0), new Vector2(350, 350), new Color(255, 255, 255, 255));
     }
-
-    StateValue listenValue = new StateValue(new Vector2(0, 0), new Vector2(300, 300), new Color(76, 76, 76, 255));
-    StateValue neutralValue = new StateValue(new Vector2(0, 0), new Vector2(325, 325), new Color(255, 255, 255, 255));
-    StateValue talkerValue = new StateValue(new Vector2(0, 0), new Vector2(350, 350), new Color(255, 255, 255, 255));
 
     void start()
     {
         tr = GetComponent<RectTransform>();
+        ChangeState();
     }
 
     public void SetImage(Sprite sp)
@@ -91,27 +93,38 @@ public class Talker : MonoBehaviour
         ChangeState();
     }
 
+    public void UpdatePos()
+    {
+        if (!tr)
+            tr = GetComponent<RectTransform>();
+        if (!image)
+            image = GetComponent<Image>();
+        ChangeState();
+    }
+
     void ChangeState()
     {
+
         switch (currentState)
         {
             case TalkerState.Talker:
                 {
-                    SetStateValue(talkerValue);
+                    SetStateValue(StateValue.talker);
                     break;
                 }
             case TalkerState.Neutral:
                 {
-                    SetStateValue(neutralValue);
+                    SetStateValue(StateValue.neutral);
                     break;
                 }
             case TalkerState.Listen:
                 {
-                    SetStateValue(listenValue);
+                    SetStateValue(StateValue.listen);
                     break;
                 }
             default:
                 break;
         }
+
     }
 }

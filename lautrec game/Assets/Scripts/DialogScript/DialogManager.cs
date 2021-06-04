@@ -57,7 +57,7 @@ public class DialogManager : MonoBehaviour
     GameObject SpawnTalker(DialogHolder source, int i)
     {
         GameObject go;
-        go = Instantiate(talkerBoxPrefab);
+        go = Instantiate(talkerBoxPrefab, talkerMaster.transform);
 
         Talker Ttmp = go.GetComponent<Talker>();
         if (source.talkerList[i].image)
@@ -68,17 +68,20 @@ public class DialogManager : MonoBehaviour
             Ttmp.nameText.text = source.talkerList[i].name;
         else
             Ttmp.nameText.text = source.gameObject.name;
+        Ttmp.isRight = true;
+        Ttmp.UpdatePos();
         return go;
     }
 
     GameObject SpawnMainTalker(GameObject source)
     {
         GameObject go;
-        go = Instantiate(talkerBoxPrefab);
+        go = Instantiate(talkerBoxPrefab, talkerMaster.transform);
         MainCharController MCCtmp = source.GetComponent<MainCharController>();
         Talker Ttmp = go.GetComponent<Talker>();
         Ttmp.image.sprite = MCCtmp.dialogImage;
         Ttmp.nameText.text = MCCtmp.dialogName;
+        Ttmp.UpdatePos();
         return go;
     }
 
