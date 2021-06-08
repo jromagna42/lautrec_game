@@ -20,7 +20,7 @@ MonoBehaviour:
   updatedFlag: 1
   flagList:
   - flagName: default
-    flagActive: 0
+    flagActive: 1
     useFlag: 0
     setFlag: 0
     delflag: 0
@@ -32,7 +32,7 @@ MonoBehaviour:
     delflag: 0
     showflag: 0
   - flagName: sub2
-    flagActive: 1
+    flagActive: 0
     useFlag: 0
     setFlag: 0
     delflag: 0
@@ -62,13 +62,15 @@ MonoBehaviour:
       showflag: 0
     readOnce: 0
     alreadyRead: 0
+    isExit: 0
+    mainIndex: 0
     showDial: 0
     delDial: 0
     showFlag: 1
     showText: 0
     delText: 0
   - text:
-    - text 2 ca fait rien
+    - text 2 ca fait rien et ca disparait
     flag:
     - flagName: default
       flagActive: 0
@@ -88,9 +90,11 @@ MonoBehaviour:
       setFlag: 0
       delflag: 0
       showflag: 0
-    readOnce: 0
+    readOnce: 1
     alreadyRead: 0
-    showDial: 0
+    isExit: 0
+    mainIndex: 1
+    showDial: 1
     delDial: 0
     showFlag: 1
     showText: 0
@@ -120,9 +124,11 @@ MonoBehaviour:
       showflag: 0
     readOnce: 0
     alreadyRead: 0
+    isExit: 0
+    mainIndex: 2
     showDial: 1
     delDial: 0
-    showFlag: 1
+    showFlag: 0
     showText: 0
     delText: 0
   - text:
@@ -149,6 +155,8 @@ MonoBehaviour:
       showflag: 0
     readOnce: 0
     alreadyRead: 0
+    isExit: 0
+    mainIndex: 3
     showDial: 1
     delDial: 0
     showFlag: 1
@@ -177,8 +185,10 @@ MonoBehaviour:
       showflag: 0
     readOnce: 0
     alreadyRead: 0
+    isExit: 0
+    mainIndex: 4
     showDial: 1
     delDial: 0
-    showFlag: 1
+    showFlag: 0
     showText: 0
     delText: 0

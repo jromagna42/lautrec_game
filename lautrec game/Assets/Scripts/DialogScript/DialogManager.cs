@@ -110,13 +110,28 @@ public class DialogManager : MonoBehaviour
         return false;
     }
 
+    bool CheckSingleRead(Dialogs.DialogContainer dc)
+    {
+        Debug.Log("la cest vrai" + dc.text[0] + "{" + dc.readOnce + "}" + "{" + dc.alreadyRead + "}");
+        if (dc.readOnce && dc.alreadyRead)
+        {
+            Debug.Log("la cest faux" + dc.text[0]);
+            return false;
+        }
+
+        return true;
+    }
+
+
     List<Dialogs.DialogContainer> GetDialog()
     {
         List<Dialogs.DialogContainer> strList = new List<Dialogs.DialogContainer>();
         foreach (Dialogs.DialogContainer dc in dialog.DList)
         {
-            if (CheckUseFlag(dc.flag, dialog.flagList) == true)
+            if (CheckUseFlag(dc.flag, dialog.flagList) && CheckSingleRead(dc))
+            {
                 strList.Add(dc);
+            }
         }
         return strList;
     }
@@ -161,6 +176,11 @@ public class DialogManager : MonoBehaviour
             chosenDialog.RemoveAll(x => chosenDialog.IndexOf(x) != i);
             currentState = dialogState.single;
             singleDialIndex = 0;
+            int j = dialog.DList.FindIndex(x => x.mainIndex == chosenDialog[0].mainIndex);
+            Dialogs.DialogContainer tmp  = dialog.DList[i];
+            tmp.alreadyRead = true;
+            dialog.DList.RemoveAt(i);
+            dialog.DList.Insert(i, tmp);
             upDial = true;
             SetNewFlags();
         }

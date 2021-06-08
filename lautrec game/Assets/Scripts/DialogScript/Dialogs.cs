@@ -53,8 +53,10 @@ namespace DialogNameSpace
 
             public bool readOnce;
 
-            [HideInInspector]
             public bool alreadyRead;
+            public bool isExit;
+
+            public int mainIndex;
 
             // EDITOR VALUE
             public bool showDial;
@@ -74,6 +76,7 @@ namespace DialogNameSpace
             tmp.flag = new List<Dialogs.DialogFlag>();
             return tmp;
         }
+
 
     }
 }

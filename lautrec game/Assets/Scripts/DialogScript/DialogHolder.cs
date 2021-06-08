@@ -31,19 +31,19 @@ public class DialogHolder : MonoBehaviour
     }
 
     private void OnMouseEnter() {
-        Debug.Log("souris rentres");
+        // Debug.Log("souris rentres");
         Cursor.SetCursor(GameManager.Instance.dialogMouse, Vector2.zero, CursorMode.Auto);
     }
 
     private void OnMouseExit() {
-        Debug.Log("souris sortir");
+        // Debug.Log("souris sortir");
         Cursor.SetCursor(null, Vector2.zero, CursorMode.Auto); 
-        
     }
     private void OnMouseDown()
     {
         Debug.Log("start dialog");
-        StartDialog();
+        if (DialogManager.Instance.dialogActive == false)
+            StartDialog();
     }
 
     public void StartDialog()

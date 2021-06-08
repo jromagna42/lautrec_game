@@ -219,6 +219,7 @@ public class DialogEditor : Editor
         }
     }
 
+
     void ShowSection_Dialogs()
     {
         bool addDial = false;
@@ -257,10 +258,23 @@ public class DialogEditor : Editor
         }
     }
 
+    void ReIndex()
+    {
+        int i = 0;
+        while (i < d.DList.Count)
+        {
+            Dialogs.DialogContainer tmp = d.DList[i];
+            tmp.mainIndex = i;
+            d.DList.RemoveAt(i);
+            d.DList.Insert(i, tmp);
+            i++;
+        }
+    }
+
     public override void OnInspectorGUI()
     {
         d = (Dialogs)target;
-
+        ReIndex();
         if (StyleSet == true)
             SetDemStyle();
         if (d.updatedFlag == false)
@@ -268,11 +282,17 @@ public class DialogEditor : Editor
             UpdateFlags();
             d.updatedFlag = true;
         }
+        
         base.OnInspectorGUI();
         GUILayout.BeginVertical(GUILayout.MinHeight(30));
         GUILayout.FlexibleSpace();
         GUILayout.EndVertical();
-
+         if ( GUILayout.Button("SAVE"))
+        {
+            ReIndex();
+            EditorUtility.SetDirty(d);
+            AssetDatabase.SaveAssets();
+        }
         StyleSet = GUILayout.Button("reset style");
 
         showFlags = EditorGUILayout.Foldout(showFlags, "FLAGS");
@@ -283,11 +303,11 @@ public class DialogEditor : Editor
 
         showDialogs = EditorGUILayout.Foldout(showDialogs, "DIALOGS");
         GUILayout.BeginVertical(gStyle[3]);
+
         if (showDialogs)
             ShowSection_Dialogs();
         GUILayout.EndVertical();
-        EditorUtility.SetDirty(d);
-        AssetDatabase.SaveAssets();
+        
     }
 }
 
