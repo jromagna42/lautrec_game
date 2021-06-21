@@ -29,7 +29,7 @@ public class DialogManager : MonoBehaviour
 
     GameObject playerTalker;
     List<GameObject> NPCtalker = new List<GameObject>();
-
+    public float textLineXOffset;
 
     public static DialogManager Instance { get; private set; }
 
@@ -43,8 +43,16 @@ public class DialogManager : MonoBehaviour
         }
     }
 
+    public void CloseDialog()
+    {
+        dialogActive = false;
+            GameManager.Instance.Player.GetComponent<MainCharController>().isTalking = false;
+
+    }
+
     public void DialogSetup(DialogHolder dc)
     {
+        Debug.Log("dialog setup");
         if (!playerTalker)
             playerTalker = SpawnMainTalker(dialog.player);
         NPCtalker.Clear();
@@ -112,10 +120,10 @@ public class DialogManager : MonoBehaviour
 
     bool CheckSingleRead(Dialogs.DialogContainer dc)
     {
-        Debug.Log("la cest vrai" + dc.text[0] + "{" + dc.readOnce + "}" + "{" + dc.alreadyRead + "}");
+        //Debug.Log("la cest vrai" + dc.text[0] + "{" + dc.readOnce + "}" + "{" + dc.alreadyRead + "}");
         if (dc.readOnce && dc.alreadyRead)
         {
-            Debug.Log("la cest faux" + dc.text[0]);
+            //Debug.Log("la cest faux" + dc.text[0]);
             return false;
         }
 
@@ -159,7 +167,7 @@ public class DialogManager : MonoBehaviour
 
         while (j < i)
         {
-            Vector3 textPos = new Vector3(textBound.position.x, yStartPos - j * yOffset, textBound.position.z);
+            Vector3 textPos = new Vector3(textBound.position.x + textLineXOffset, yStartPos - j * yOffset, textBound.position.z);
             GameObject tmp = Instantiate(textLinePrefab, textPos, textBound.rotation, textBound);
             tmp.GetComponent<TextLine>().textComponent = tmp.GetComponent<Text>();
             TextLineList.Add(tmp);
@@ -177,7 +185,7 @@ public class DialogManager : MonoBehaviour
             currentState = dialogState.single;
             singleDialIndex = 0;
             int j = dialog.DList.FindIndex(x => x.mainIndex == chosenDialog[0].mainIndex);
-            Dialogs.DialogContainer tmp  = dialog.DList[i];
+            Dialogs.DialogContainer tmp = dialog.DList[i];
             tmp.alreadyRead = true;
             dialog.DList.RemoveAt(i);
             dialog.DList.Insert(i, tmp);

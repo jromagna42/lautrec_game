@@ -30,20 +30,25 @@ public class DialogHolder : MonoBehaviour
         cps = GetComponent<CharPrefabScript>();
     }
 
-    private void OnMouseEnter() {
+    private void OnMouseEnter()
+    {
         // Debug.Log("souris rentres");
         Cursor.SetCursor(GameManager.Instance.dialogMouse, Vector2.zero, CursorMode.Auto);
     }
 
-    private void OnMouseExit() {
+    private void OnMouseExit()
+    {
         // Debug.Log("souris sortir");
-        Cursor.SetCursor(null, Vector2.zero, CursorMode.Auto); 
+        Cursor.SetCursor(null, Vector2.zero, CursorMode.Auto);
     }
     private void OnMouseDown()
     {
         Debug.Log("start dialog");
         if (DialogManager.Instance.dialogActive == false)
+        {
             StartDialog();
+            GameManager.Instance.Player.GetComponent<MainCharController>().isTalking = true;
+        }
     }
 
     public void StartDialog()
