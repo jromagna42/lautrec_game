@@ -1,0 +1,69 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dfad3f589d0b0a34394ea30270795d54, type: 3}
+  m_Name: doggo dialog
+  m_EditorClassIdentifier: 
+  plus: {fileID: 21300000, guid: ff2f00f5bd16c6a49a5d0255606b27f0, type: 3}
+  minus: {fileID: 21300000, guid: 99ad5b20d35bc39408c97010106b185f, type: 3}
+  player: {fileID: 0}
+  talkers:
+  - lautrec
+  - doggo
+  updatedFlag: 1
+  flagList:
+  - flagName: default
+    flagActive: 1
+    useFlag: 0
+    setFlag: 0
+    delflag: 0
+    showflag: 0
+  - flagName: sub1
+    flagActive: 0
+    useFlag: 0
+    setFlag: 0
+    delflag: 0
+    showflag: 0
+  - flagName: sub2
+    flagActive: 0
+    useFlag: 0
+    setFlag: 0
+    delflag: 0
+    showflag: 0
+  DList:
+  - flag:
+    - flagName: default
+      flagActive: 0
+      useFlag: 1
+      setFlag: 1
+      delflag: 0
+      showflag: 0
+    - flagName: sub1
+      flagActive: 0
+      useFlag: 0
+      setFlag: 1
+      delflag: 0
+      showflag: 0
+    - flagName: sub2
+      flagActive: 0
+      useFlag: 0
+      setFlag: 0
+      delflag: 0
+      showflag: 0
+    readOnce: 0
+    alreadyRead: 0
+    isExit: 0
+    mainIndex: 0
+    showDial: 1
+    delDial: 0
+    showFlag: 1
+    showText: 0
+    delText: 0

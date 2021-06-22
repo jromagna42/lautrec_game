@@ -151,15 +151,21 @@ public class DialogEditor : Editor
         addText = GUILayout.Button("add textbox");
         GUILayout.FlexibleSpace();
         GUILayout.EndHorizontal();
+        if (t.text == null)
+            t.text = new List<Dialogs.DCSub>();
         if (addText == true)
         {
-            t.text.Add("");
+            t.text.Add(new Dialogs.DCSub());
             addText = false;
         }
         for (int j = 0; j < t.text.Count; j++)
         {
+            Dialogs.DCSub tmpV = t.text[j];
             GUILayout.BeginHorizontal();
-            t.text[j] = EditorGUILayout.TextArea(/*"text" + j,*/ t.text[j], GUILayout.MaxWidth(EditorGUIUtility.currentViewWidth - 65));
+            tmpV.str = EditorGUILayout.TextArea(/*"text" + j,*/ tmpV.str, GUILayout.MaxWidth(EditorGUIUtility.currentViewWidth - 65));
+            tmpV.talkerIndex = EditorGUILayout.Popup(tmpV.talkerIndex, d.talkers);
+            tmpV.talker = d.talkers[tmpV.talkerIndex];
+            t.text[j] = tmpV;
             t.delText = GUILayout.Button("-", GUILayout.MaxWidth(20));
             if (t.delText == true)
             {

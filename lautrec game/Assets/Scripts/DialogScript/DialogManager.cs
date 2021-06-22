@@ -211,7 +211,7 @@ public class DialogManager : MonoBehaviour
         {
             TextLine tl;
             tl = TextLineList[i].GetComponent<TextLine>();
-            tl.textComponent.text = chosenDialog[i].text[0];
+            tl.textComponent.text = chosenDialog[i].text[0].talker + " : " + chosenDialog[i].text[0].str;
             tl.dialIndex = i;
             tl.dm = this;
         }
@@ -221,7 +221,7 @@ public class DialogManager : MonoBehaviour
     {
         TextLine tl;
         tl = TextLineList[0].GetComponent<TextLine>();
-        tl.textComponent.text = chosenDialog[0].text[singleDialIndex];
+        tl.textComponent.text = chosenDialog[0].text[singleDialIndex].talker + " : " + chosenDialog[0].text[singleDialIndex].str;
         tl.dialIndex = 0;
         tl.dm = this;
     }

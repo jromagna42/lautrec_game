@@ -12,7 +12,7 @@ namespace DialogNameSpace
         public Sprite minus;
 
         public GameObject player;
-        public GameObject[] speakers = new GameObject[2];
+        public string[] talkers = new string[2];
 
 
         [HideInInspector]
@@ -45,16 +45,27 @@ namespace DialogNameSpace
         [SerializeField]
         public List<DialogContainer> DList = new List<DialogContainer>();
 
+        public struct DCSub
+        {
+            public string str;
+            public string talker;
+            public int talkerIndex;
+        }
+
         [Serializable]
         public struct DialogContainer
         {
-            public List<string> text;
-            public List<Dialogs.DialogFlag> flag;
+            public List<DCSub> text;
+
+            public List<DialogFlag> flag;
 
             public bool readOnce;
 
             public bool alreadyRead;
             public bool isExit;
+
+            
+
 
             public int mainIndex;
 
@@ -72,7 +83,7 @@ namespace DialogNameSpace
         {
             DialogContainer tmp = new DialogContainer();
 
-            tmp.text = new List<string>();
+            tmp.text = new List<DCSub>();
             tmp.flag = new List<Dialogs.DialogFlag>();
             return tmp;
         }
