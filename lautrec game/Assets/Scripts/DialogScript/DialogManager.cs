@@ -46,6 +46,7 @@ public class DialogManager : MonoBehaviour
     public void CloseDialog()
     {
         dialogActive = false;
+        
             GameManager.Instance.Player.GetComponent<MainCharController>().isTalking = false;
 
     }

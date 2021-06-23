@@ -27,7 +27,7 @@ MonoBehaviour:
     delflag: 0
     showflag: 0
   - flagName: sub1
-    flagActive: 0
+    flagActive: 1
     useFlag: 0
     setFlag: 0
     delflag: 0
@@ -39,11 +39,18 @@ MonoBehaviour:
     delflag: 0
     showflag: 0
   DList:
-  - flag:
+  - text:
+    - str: ouaf?
+      talker: lautrec
+      talkerIndex: 0
+    - str: ouaf!
+      talker: doggo
+      talkerIndex: 1
+    flag:
     - flagName: default
       flagActive: 0
       useFlag: 1
-      setFlag: 1
+      setFlag: 0
       delflag: 0
       showflag: 0
     - flagName: sub1
@@ -59,9 +66,117 @@ MonoBehaviour:
       delflag: 0
       showflag: 0
     readOnce: 0
-    alreadyRead: 0
+    alreadyRead: 1
     isExit: 0
     mainIndex: 0
+    showDial: 1
+    delDial: 0
+    showFlag: 1
+    showText: 0
+    delText: 0
+  - text:
+    - str: ouaf ... ouafouaf!
+      talker: lautrec
+      talkerIndex: 0
+    - str: ...
+      talker: doggo
+      talkerIndex: 1
+    - str: ouaf ou-AF ...
+      talker: doggo
+      talkerIndex: 1
+    flag:
+    - flagName: default
+      flagActive: 1
+      useFlag: 0
+      setFlag: 0
+      delflag: 0
+      showflag: 0
+    - flagName: sub1
+      flagActive: 1
+      useFlag: 1
+      setFlag: 0
+      delflag: 0
+      showflag: 0
+    - flagName: sub2
+      flagActive: 0
+      useFlag: 0
+      setFlag: 1
+      delflag: 0
+      showflag: 0
+    readOnce: 0
+    alreadyRead: 1
+    isExit: 0
+    mainIndex: 1
+    showDial: 0
+    delDial: 0
+    showFlag: 1
+    showText: 0
+    delText: 0
+  - text:
+    - str: OUAF !!!
+      talker: lautrec
+      talkerIndex: 0
+    - str: ouafouaf.
+      talker: doggo
+      talkerIndex: 1
+    flag:
+    - flagName: default
+      flagActive: 1
+      useFlag: 0
+      setFlag: 1
+      delflag: 0
+      showflag: 0
+    - flagName: sub1
+      flagActive: 1
+      useFlag: 0
+      setFlag: 0
+      delflag: 0
+      showflag: 0
+    - flagName: sub2
+      flagActive: 0
+      useFlag: 1
+      setFlag: 0
+      delflag: 0
+      showflag: 0
+    readOnce: 0
+    alreadyRead: 1
+    isExit: 0
+    mainIndex: 2
+    showDial: 0
+    delDial: 0
+    showFlag: 1
+    showText: 0
+    delText: 0
+  - text:
+    - str: ouafouafouaf ?
+      talker: lautrec
+      talkerIndex: 0
+    - str: ouaf...
+      talker: lautrec
+      talkerIndex: 0
+    flag:
+    - flagName: default
+      flagActive: 1
+      useFlag: 1
+      setFlag: 1
+      delflag: 0
+      showflag: 0
+    - flagName: sub1
+      flagActive: 1
+      useFlag: 0
+      setFlag: 0
+      delflag: 0
+      showflag: 0
+    - flagName: sub2
+      flagActive: 0
+      useFlag: 0
+      setFlag: 0
+      delflag: 0
+      showflag: 0
+    readOnce: 1
+    alreadyRead: 0
+    isExit: 0
+    mainIndex: 3
     showDial: 1
     delDial: 0
     showFlag: 1

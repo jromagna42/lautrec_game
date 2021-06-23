@@ -13,27 +13,35 @@ public class TextLine : MonoBehaviour
     public int dialIndex;
     public DialogManager dm;
 
-    Color target = Color.red;
+    Color targetColor;
+    public Color baseColor;
+    public Color overColor;
+    public Color clickColor;
+    
+
+    private void Start() {
+        targetColor = baseColor;
+    }
 
     void Update()
     {
         if (textComponent)
-            textComponent.color = Vector4.MoveTowards(textComponent.color, target, Time.deltaTime * 10);
+            textComponent.color = Vector4.MoveTowards(textComponent.color, targetColor, Time.deltaTime * 10);
     }
 
     public void OnPointerClick(PointerEventData eventData) // 3
     {
-        target = Color.blue;
+        targetColor = clickColor;
         dm.TextLineClicked(dialIndex);
     }
 
     public void OnPointerEnter(PointerEventData eventData)
     {
-        target = Color.green;
+        targetColor = overColor;
     }
 
     public void OnPointerExit(PointerEventData eventData)
     {
-        target = Color.red;
+        targetColor = baseColor;
     }
 }

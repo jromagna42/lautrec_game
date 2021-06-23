@@ -45,6 +45,7 @@ namespace DialogNameSpace
         [SerializeField]
         public List<DialogContainer> DList = new List<DialogContainer>();
 
+        [Serializable]
         public struct DCSub
         {
             public string str;
