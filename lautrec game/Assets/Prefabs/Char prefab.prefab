@@ -130,13 +130,15 @@ MonoBehaviour:
     _bezierPath:
       points:
       - {x: -2, y: 0, z: 0}
-      - {x: -1, y: 0.5, z: 0}
-      - {x: 1, y: -0.5, z: 0}
+      - {x: -2, y: -2, z: 0}
+      - {x: 2, y: -2, z: 0}
       - {x: 2, y: 0, z: 0}
-      isClosed: 0
+      - {x: 2, y: 2, z: 0}
+      - {x: -2, y: 2, z: 0}
+      isClosed: 1
       space: 1
-      controlMode: 0
-      autoControlLength: 0.3
+      controlMode: 3
+      autoControlLength: 0.01
       boundsUpToDate: 0
       bounds:
         m_Center: {x: 0, y: 0, z: 0}
