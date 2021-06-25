@@ -50,6 +50,8 @@ public class CharPrefabScript : MonoBehaviour
         poteau.GetComponent<SpriteRenderer>().sortingOrder = tmp;
      }
 
+
+
     void Start()
     {
         //  foreach (Transform child in transform)
@@ -65,6 +67,8 @@ public class CharPrefabScript : MonoBehaviour
 
     void MoveUpDown()
     {
+        if (canMoveUp == false)
+            return;
         if (timer <= 0)
         {
             timer = Random.Range(minTimer, maxTimer);
