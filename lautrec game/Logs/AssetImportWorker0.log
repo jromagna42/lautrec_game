@@ -1,6 +1,6 @@
 Using pre-set license
 Built from '2020.3/staging' branch; Version is '2020.3.6f1 (338bb68529b2) revision 3378102'; Using compiler version '192528614'; Build Type 'Release'
-OS: 'Windows 10 Home; OS build 19042.1052; Version 2009; 64bit' Language: 'fr' Physical Memory: 16292 MB
+OS: 'Windows 10 Home; OS build 19042.1083; Version 2009; 64bit' Language: 'fr' Physical Memory: 16292 MB
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
 
  COMMAND LINE ARGUMENTS:
@@ -15,11 +15,11 @@ D:/UNITY_PROJECT/lautrec_game/lautrec game
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-56105
+59368
 Successfully changed project path to: D:/UNITY_PROJECT/lautrec_game/lautrec game
 D:/UNITY_PROJECT/lautrec_game/lautrec game
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 115.84 ms, found 1 plugins.
+Refreshing native plugins compatible for Editor in 117.96 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.3.6f1 (338bb68529b2)
 [Subsystems] Discovering subsystems at path F:/Unity Editor/2020.3.6f1/Editor/Data/Resources/UnitySubsystems
@@ -36,653 +36,861 @@ Initialize mono
 Mono path[0] = 'F:/Unity Editor/2020.3.6f1/Editor/Data/Managed'
 Mono path[1] = 'F:/Unity Editor/2020.3.6f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'F:/Unity Editor/2020.3.6f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56604
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56300
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: F:/Unity Editor/2020.3.6f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
 Register platform support module: F:/Unity Editor/2020.3.6f1/Editor/Data/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll
 Register platform support module: F:/Unity Editor/2020.3.6f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
 Register platform support module: F:/Unity Editor/2020.3.6f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/UnityEditor.LinuxStandalone.Extensions.dll
-Registered in 0.002146 seconds.
+Registered in 0.002435 seconds.
 Native extension for LinuxStandalone target not found
 Native extension for WindowsStandalone target not found
 Native extension for OSXStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 110.19 ms, found 1 plugins.
+Refreshing native plugins compatible for Editor in 111.69 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.482 seconds
+- Completed reload, in  1.407 seconds
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.002756 seconds.
+Registered in 0.002805 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for LinuxStandalone target not found
 Native extension for WindowsStandalone target not found
 Native extension for OSXStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 107.14 ms, found 1 plugins.
+Refreshing native plugins compatible for Editor in 101.33 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.497 seconds
+- Completed reload, in  1.452 seconds
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
 Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.08 seconds
-Refreshing native plugins compatible for Editor in 0.76 ms, found 1 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.09 seconds
+Refreshing native plugins compatible for Editor in 1.30 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3162 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 3163 Unused Serialized files (Serialized files now loaded: 0)
 System memory in use before: 141.3 MB.
 System memory in use after: 141.5 MB.
 
-Unloading 20 unused Assets to reduce memory usage. Loaded Objects now: 3614.
-Total: 3.104900 ms (FindLiveObjects: 0.328500 ms CreateObjectMapping: 0.174600 ms MarkObjects: 2.498600 ms  DeleteObjects: 0.087900 ms)
+Unloading 20 unused Assets to reduce memory usage. Loaded Objects now: 3615.
+Total: 3.470500 ms (FindLiveObjects: 0.419600 ms CreateObjectMapping: 0.192200 ms MarkObjects: 2.823600 ms  DeleteObjects: 0.033500 ms)
 
 ========================================================================
 Received Import Request.
-  path: Assets/Sprite/Images/Character/fait/portrait-of-m-paul-sescau-portrait-de-m-paul-sescau bien.png
-  artifactKey: Guid(6e8ed08dabc85dc4a95d70e64e4a6fff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprite/Images/Character/fait/portrait-of-m-paul-sescau-portrait-de-m-paul-sescau bien.png using Guid(6e8ed08dabc85dc4a95d70e64e4a6fff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '874bee8f29301db45942bff0925b3d94') in 0.315946 seconds
-  Import took 0.323451 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000324 seconds.
-  path: Assets/Sprite/Images/Character/fait/they bien.png
-  artifactKey: Guid(5abe66761ed39a04f8819e108fb9b6d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprite/Images/Character/fait/they bien.png using Guid(5abe66761ed39a04f8819e108fb9b6d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ea21fc02245c499f7df8a30b1065cce4') in 0.212696 seconds
-  Import took 0.219980 seconds .
+  path: Assets/Prefabs/GameManager.prefab
+  artifactKey: Guid(2bf6516cfcb28a44ebc6260e7c9a4a55) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/GameManager.prefab using Guid(2bf6516cfcb28a44ebc6260e7c9a4a55) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f360ed3b49d3598e371000e96d145010') in 0.122944 seconds
+  Import took 0.160438 seconds .
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.003311 seconds.
+Registered in 0.002724 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for LinuxStandalone target not found
 Native extension for WindowsStandalone target not found
 Native extension for OSXStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.80 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.350 seconds
-Platform modules already initialized, skipping
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
 Refreshing native plugins compatible for Editor in 0.91 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3043 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 136.4 MB.
-System memory in use after: 136.6 MB.
-
-Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 3627.
-Total: 3.696600 ms (FindLiveObjects: 0.342300 ms CreateObjectMapping: 0.190000 ms MarkObjects: 3.134000 ms  DeleteObjects: 0.029200 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.002661 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for LinuxStandalone target not found
-Native extension for WindowsStandalone target not found
-Native extension for OSXStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 1.24 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.308 seconds
+- Completed reload, in  1.207 seconds
 Platform modules already initialized, skipping
 Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 0.98 ms, found 1 plugins.
+Refreshing native plugins compatible for Editor in 0.92 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3043 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 136.5 MB.
-System memory in use after: 136.7 MB.
+Unloading 3046 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 133.6 MB.
+System memory in use after: 133.8 MB.
 
-Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 3630.
-Total: 5.838700 ms (FindLiveObjects: 0.452400 ms CreateObjectMapping: 0.299100 ms MarkObjects: 5.048100 ms  DeleteObjects: 0.037100 ms)
+Unloading 13 unused Assets to reduce memory usage. Loaded Objects now: 3622.
+Total: 5.007200 ms (FindLiveObjects: 0.428800 ms CreateObjectMapping: 0.279700 ms MarkObjects: 4.199800 ms  DeleteObjects: 0.097100 ms)
 
 ========================================================================
 Received Import Request.
-  Time since last request: 200.371948 seconds.
-  path: Assets/Scripts/Renamer.cs
-  artifactKey: Guid(daf164f2964e7514ba76a712d481c313) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Renamer.cs using Guid(daf164f2964e7514ba76a712d481c313) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6f95dca253a9321eb5ae8a0c3e47a1b7') in 0.026749 seconds
-  Import took 0.036152 seconds .
+  Time since last request: 51.371845 seconds.
+  path: Assets/Prefabs/GUIManager.cs
+  artifactKey: Guid(0068140c50156264fa60e3ecaea6d7d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/GUIManager.cs using Guid(0068140c50156264fa60e3ecaea6d7d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '727da637ce1537e2252e7ebb50df7c8d') in 0.044827 seconds
+  Import took 0.167935 seconds .
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.003531 seconds.
+Registered in 0.002865 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for LinuxStandalone target not found
 Native extension for WindowsStandalone target not found
 Native extension for OSXStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 1.06 ms, found 1 plugins.
+Refreshing native plugins compatible for Editor in 0.96 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.264 seconds
-Platform modules already initialized, skipping
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 0.86 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3044 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 136.5 MB.
-System memory in use after: 136.7 MB.
-
-Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 3634.
-Total: 4.744500 ms (FindLiveObjects: 0.462700 ms CreateObjectMapping: 0.218800 ms MarkObjects: 4.009700 ms  DeleteObjects: 0.051600 ms)
-
-========================================================================
-Received Import Request.
-  Time since last request: 6.377608 seconds.
-  path: Assets/Prefabs/Char prefab.prefab
-  artifactKey: Guid(2130dbf55ead2694aaf5320ae9bb16dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Char prefab.prefab using Guid(2130dbf55ead2694aaf5320ae9bb16dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7d939df922579edc2e30c00c8a1e426a') in 0.286418 seconds
-  Import took 0.292889 seconds .
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.003218 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for LinuxStandalone target not found
-Native extension for WindowsStandalone target not found
-Native extension for OSXStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 1.13 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.242 seconds
-Platform modules already initialized, skipping
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 0.77 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3044 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 138.7 MB.
-System memory in use after: 139.0 MB.
-
-Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 3679.
-Total: 5.199500 ms (FindLiveObjects: 0.488200 ms CreateObjectMapping: 0.292400 ms MarkObjects: 4.396700 ms  DeleteObjects: 0.021000 ms)
-
-========================================================================
-Received Import Request.
-  Time since last request: 91.143282 seconds.
-  path: Assets/Prefabs/Char prefab.prefab
-  artifactKey: Guid(2130dbf55ead2694aaf5320ae9bb16dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Char prefab.prefab using Guid(2130dbf55ead2694aaf5320ae9bb16dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b4a0a2777eae66b256f87a63fb287106') in 0.197149 seconds
-  Import took 0.203944 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000374 seconds.
-  path: Assets/Scripts/Renamer.cs
-  artifactKey: Guid(daf164f2964e7514ba76a712d481c313) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Renamer.cs using Guid(daf164f2964e7514ba76a712d481c313) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '123f1e41f2e0f5fd2ee413fcad97584a') in 0.001983 seconds
-  Import took 0.007574 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 3.220676 seconds.
-  path: Assets/Prefabs/Char prefab.prefab
-  artifactKey: Guid(2130dbf55ead2694aaf5320ae9bb16dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Char prefab.prefab using Guid(2130dbf55ead2694aaf5320ae9bb16dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b147f6a4d4f38179326269e170ad9816') in 0.028579 seconds
-  Import took 0.036288 seconds .
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.003728 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for LinuxStandalone target not found
-Native extension for WindowsStandalone target not found
-Native extension for OSXStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.74 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.253 seconds
-Platform modules already initialized, skipping
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 1.00 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3044 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 138.9 MB.
-System memory in use after: 139.1 MB.
-
-Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 3718.
-Total: 5.523900 ms (FindLiveObjects: 0.473800 ms CreateObjectMapping: 0.270600 ms MarkObjects: 4.751600 ms  DeleteObjects: 0.026400 ms)
-
-========================================================================
-Received Import Request.
-  Time since last request: 37.098292 seconds.
-  path: Assets/Scripts/Renamer.cs
-  artifactKey: Guid(daf164f2964e7514ba76a712d481c313) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Renamer.cs using Guid(daf164f2964e7514ba76a712d481c313) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3b9ea9b9a76f6b3e88aa65e313be7523') in 0.006729 seconds
-  Import took 0.013636 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.042556 seconds.
-  path: Assets/Scripts/Renamer.cs
-  artifactKey: Guid(daf164f2964e7514ba76a712d481c313) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Renamer.cs using Guid(daf164f2964e7514ba76a712d481c313) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3b9ea9b9a76f6b3e88aa65e313be7523') in 0.002758 seconds
-  Import took 0.009760 seconds .
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.003445 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for LinuxStandalone target not found
-Native extension for WindowsStandalone target not found
-Native extension for OSXStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.74 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.317 seconds
-Platform modules already initialized, skipping
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 0.78 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3044 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 138.9 MB.
-System memory in use after: 139.1 MB.
-
-Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 3721.
-Total: 3.146900 ms (FindLiveObjects: 0.344000 ms CreateObjectMapping: 0.168500 ms MarkObjects: 2.585300 ms  DeleteObjects: 0.048000 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.002744 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for LinuxStandalone target not found
-Native extension for WindowsStandalone target not found
-Native extension for OSXStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.86 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.254 seconds
-Platform modules already initialized, skipping
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 1.10 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3044 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 138.9 MB.
-System memory in use after: 139.1 MB.
-
-Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 3724.
-Total: 4.023600 ms (FindLiveObjects: 0.474600 ms CreateObjectMapping: 0.294300 ms MarkObjects: 3.214400 ms  DeleteObjects: 0.038900 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.004379 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for LinuxStandalone target not found
-Native extension for WindowsStandalone target not found
-Native extension for OSXStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.83 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.324 seconds
+- Completed reload, in  1.219 seconds
 Platform modules already initialized, skipping
 Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
 Refreshing native plugins compatible for Editor in 0.84 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3044 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 138.9 MB.
-System memory in use after: 139.1 MB.
+Unloading 3046 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 133.7 MB.
+System memory in use after: 133.9 MB.
 
-Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 3727.
-Total: 3.997000 ms (FindLiveObjects: 0.442800 ms CreateObjectMapping: 0.180100 ms MarkObjects: 3.352200 ms  DeleteObjects: 0.021000 ms)
+Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 3625.
+Total: 5.010700 ms (FindLiveObjects: 0.344000 ms CreateObjectMapping: 0.267400 ms MarkObjects: 4.375900 ms  DeleteObjects: 0.021800 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 90.414679 seconds.
+  path: Assets/Scripts/GameManager1.cs
+  artifactKey: Guid(6821539b21ce31c4786025e760ab2905) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/GameManager1.cs using Guid(6821539b21ce31c4786025e760ab2905) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'da091409d62d124506a8069a696d51d9') in 0.010475 seconds
+  Import took 0.105433 seconds .
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.002877 seconds.
+Registered in 0.002710 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for LinuxStandalone target not found
 Native extension for WindowsStandalone target not found
 Native extension for OSXStandalone target not found
 Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.71 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.109 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.92 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3047 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 133.7 MB.
+System memory in use after: 134.0 MB.
+
+Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 3629.
+Total: 3.600400 ms (FindLiveObjects: 0.417200 ms CreateObjectMapping: 0.197300 ms MarkObjects: 2.959300 ms  DeleteObjects: 0.025700 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 170.765755 seconds.
+  path: Assets/Prefabs/GameManager.prefab
+  artifactKey: Guid(2bf6516cfcb28a44ebc6260e7c9a4a55) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/GameManager.prefab using Guid(2bf6516cfcb28a44ebc6260e7c9a4a55) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2accf5555829d393221e298077f4f555') in 0.052029 seconds
+  Import took 0.173653 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 8.428614 seconds.
+  path: Assets/Prefabs/GameManager.prefab
+  artifactKey: Guid(2bf6516cfcb28a44ebc6260e7c9a4a55) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/GameManager.prefab using Guid(2bf6516cfcb28a44ebc6260e7c9a4a55) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cd427ad70df4eb8c4aeef9966328fbf9') in 0.011736 seconds
+  Import took 0.029441 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.723013 seconds.
+  path: Assets/Prefabs/GameManager.prefab
+  artifactKey: Guid(2bf6516cfcb28a44ebc6260e7c9a4a55) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/GameManager.prefab using Guid(2bf6516cfcb28a44ebc6260e7c9a4a55) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '34e22b13cff837830927831185b5467a') in 0.011628 seconds
+  Import took 0.020645 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 8.951712 seconds.
+  path: Assets/beffio/UI - BUILDER/Source Files/Panels/Panels@2x-assets/CornerPanels/CornerPanelRadius_12px_Stroke_1px.png
+  artifactKey: Guid(b6fc46d7e4f6171488ef3778597dd5db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/beffio/UI - BUILDER/Source Files/Panels/Panels@2x-assets/CornerPanels/CornerPanelRadius_12px_Stroke_1px.png using Guid(b6fc46d7e4f6171488ef3778597dd5db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5bfee6f7ab6b36cb18de2a7dcfdf9989') in 0.224516 seconds
+  Import took 0.264283 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001815 seconds.
+  path: Assets/beffio/UI - BUILDER/Source Files/Panels/Panels@2x-assets/CornerPanels/CornerPanelRadius_12px_Stroke_1px.png
+  artifactKey: Guid(b6fc46d7e4f6171488ef3778597dd5db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/beffio/UI - BUILDER/Source Files/Panels/Panels@2x-assets/CornerPanels/CornerPanelRadius_12px_Stroke_1px.png using Guid(b6fc46d7e4f6171488ef3778597dd5db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5bfee6f7ab6b36cb18de2a7dcfdf9989') in 0.012953 seconds
+  Import took 0.019714 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.107256 seconds.
+  path: Assets/beffio/UI - BUILDER/Source Files/Panels/Panels@2x-assets/CornerPanels/CornerPanelRadius_12px_Stroke_2px.png
+  artifactKey: Guid(b6d6416ea74d7d647a6c0b2b234392a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/beffio/UI - BUILDER/Source Files/Panels/Panels@2x-assets/CornerPanels/CornerPanelRadius_12px_Stroke_2px.png using Guid(b6d6416ea74d7d647a6c0b2b234392a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bcbe5072c90db9ea0d83b1e1383b7a8c') in 0.048410 seconds
+  Import took 0.093348 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000425 seconds.
+  path: Assets/beffio/UI - BUILDER/Source Files/Panels/Panels@2x-assets/CornerPanels/CornerPanelRadius_12px_Stroke_10px.png
+  artifactKey: Guid(fd9fe6f63c9862649abe56cf2fe116bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/beffio/UI - BUILDER/Source Files/Panels/Panels@2x-assets/CornerPanels/CornerPanelRadius_12px_Stroke_10px.png using Guid(fd9fe6f63c9862649abe56cf2fe116bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7e400b62c820b6186d54434cb434a47f') in 0.108490 seconds
+  Import took 0.140807 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000350 seconds.
+  path: Assets/beffio/UI - BUILDER/Source Files/Panels/Panels@2x-assets/CornerPanels/CornerPanelRadius_12px_Stroke_2px.png
+  artifactKey: Guid(b6d6416ea74d7d647a6c0b2b234392a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/beffio/UI - BUILDER/Source Files/Panels/Panels@2x-assets/CornerPanels/CornerPanelRadius_12px_Stroke_2px.png using Guid(b6d6416ea74d7d647a6c0b2b234392a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bcbe5072c90db9ea0d83b1e1383b7a8c') in 0.012434 seconds
+  Import took 0.019156 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000396 seconds.
+  path: Assets/beffio/UI - BUILDER/Source Files/Panels/Panels@2x-assets/CornerPanels/CornerPanelRadius_24px_Stroke_6px.png
+  artifactKey: Guid(d2023dd156b783f439bc7c9316504467) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/beffio/UI - BUILDER/Source Files/Panels/Panels@2x-assets/CornerPanels/CornerPanelRadius_24px_Stroke_6px.png using Guid(d2023dd156b783f439bc7c9316504467) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dfb36e499a175ebddeb10bfe746a779d') in 0.102329 seconds
+  Import took 0.174346 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000427 seconds.
+  path: Assets/beffio/UI - BUILDER/Source Files/Panels/Panels@2x-assets/CornerPanels/CornerPanelRadius_24px_Stroke_20px.png
+  artifactKey: Guid(d29f4c61ae0db5d46a7ce158bc7102ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/beffio/UI - BUILDER/Source Files/Panels/Panels@2x-assets/CornerPanels/CornerPanelRadius_24px_Stroke_20px.png using Guid(d29f4c61ae0db5d46a7ce158bc7102ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'da3e614ac2329e9da8e4c2307c04a847') in 0.082312 seconds
+  Import took 0.089955 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000420 seconds.
+  path: Assets/beffio/UI - BUILDER/Source Files/Panels/Panels@2x-assets/CornerPanels/CornerPanelRadius_24px_Fill.png
+  artifactKey: Guid(9f149f0e86c53d843a72ce065e055f38) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/beffio/UI - BUILDER/Source Files/Panels/Panels@2x-assets/CornerPanels/CornerPanelRadius_24px_Fill.png using Guid(9f149f0e86c53d843a72ce065e055f38) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f9a5fa556f3260eb8a131d023f819b21') in 0.051016 seconds
+  Import took 0.094373 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000354 seconds.
+  path: Assets/beffio/UI - BUILDER/Source Files/Panels/Panels@2x-assets/CornerPanels/CornerPanelRadius_12px_Stroke_6px.png
+  artifactKey: Guid(f822e1b90eda3cc468f1591fa5358732) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/beffio/UI - BUILDER/Source Files/Panels/Panels@2x-assets/CornerPanels/CornerPanelRadius_12px_Stroke_6px.png using Guid(f822e1b90eda3cc468f1591fa5358732) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '76984f02287976645413aec3d66f48c2') in 0.065656 seconds
+  Import took 0.148184 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000251 seconds.
+  path: Assets/beffio/UI - BUILDER/Source Files/Panels/Panels@2x-assets/CornerPanels/CornerPanelRadius_24px_Stroke_16px.png
+  artifactKey: Guid(a11370c6579c57f48944cc9fa124ec6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/beffio/UI - BUILDER/Source Files/Panels/Panels@2x-assets/CornerPanels/CornerPanelRadius_24px_Stroke_16px.png using Guid(a11370c6579c57f48944cc9fa124ec6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4e413d69e164e94379f4d218c9e13c8f') in 0.057940 seconds
+  Import took 0.135018 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000415 seconds.
+  path: Assets/beffio/UI - BUILDER/Source Files/Panels/Panels@2x-assets/CornerPanels/CornerPanelRadius_50px_Stroke_4px.png
+  artifactKey: Guid(b62b37fa7d61ee449bf69239f048103e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/beffio/UI - BUILDER/Source Files/Panels/Panels@2x-assets/CornerPanels/CornerPanelRadius_50px_Stroke_4px.png using Guid(b62b37fa7d61ee449bf69239f048103e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dd9e7a524abbe8aafadb938977d42d43') in 0.079084 seconds
+  Import took 0.109028 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000361 seconds.
+  path: Assets/beffio/UI - BUILDER/Source Files/Panels/Panels@2x-assets/CornerPanels/CornerPanelRadius_34px_Stroke_4px.png
+  artifactKey: Guid(b04cbebc52a7bf1488124394ff15f186) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/beffio/UI - BUILDER/Source Files/Panels/Panels@2x-assets/CornerPanels/CornerPanelRadius_34px_Stroke_4px.png using Guid(b04cbebc52a7bf1488124394ff15f186) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1ea0b2d54c9208eaa5c6d7e20b8ff78f') in 0.101747 seconds
+  Import took 0.191269 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000370 seconds.
+  path: Assets/beffio/UI - BUILDER/Source Files/Panels/Panels@2x-assets/CornerPanels/CornerPanelRadius_34px_Stroke_12px.png
+  artifactKey: Guid(ec99946d64d2ac34085f9ae3517714df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/beffio/UI - BUILDER/Source Files/Panels/Panels@2x-assets/CornerPanels/CornerPanelRadius_34px_Stroke_12px.png using Guid(ec99946d64d2ac34085f9ae3517714df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'abcd1c041b9599483a2f21b0d9c0d3b5') in 0.135343 seconds
+  Import took 0.171209 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000288 seconds.
+  path: Assets/beffio/UI - BUILDER/Source Files/Panels/Panels@2x-assets/CornerPanels/CornerPanelRadius_34px_Stroke_6px.png
+  artifactKey: Guid(b2b15c85265c52c46b4c9fc51ad2aa16) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/beffio/UI - BUILDER/Source Files/Panels/Panels@2x-assets/CornerPanels/CornerPanelRadius_34px_Stroke_6px.png using Guid(b2b15c85265c52c46b4c9fc51ad2aa16) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0007b38db963bf05781a85a8e2ea05d0') in 0.096885 seconds
+  Import took 0.142054 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000380 seconds.
+  path: Assets/beffio/UI - BUILDER/Source Files/Panels/Panels@2x-assets/CornerPanels/CornerPanelRadius_50px_Stroke_6px.png
+  artifactKey: Guid(5422934704f6d8845ab81872ff973a47) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/beffio/UI - BUILDER/Source Files/Panels/Panels@2x-assets/CornerPanels/CornerPanelRadius_50px_Stroke_6px.png using Guid(5422934704f6d8845ab81872ff973a47) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7ddb35e63620457b51779e937da324a3') in 0.058376 seconds
+  Import took 0.105874 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000290 seconds.
+  path: Assets/beffio/UI - BUILDER/Source Files/Panels/Panels@2x-assets/CornerPanels/CornerPanelRadius_50px_Stroke_2px.png
+  artifactKey: Guid(6d7d8e3b63765f249a2fffc770842fe0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/beffio/UI - BUILDER/Source Files/Panels/Panels@2x-assets/CornerPanels/CornerPanelRadius_50px_Stroke_2px.png using Guid(6d7d8e3b63765f249a2fffc770842fe0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a4a23213a8122373d94c233ad43b2c4c') in 0.068048 seconds
+  Import took 0.105766 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000369 seconds.
+  path: Assets/beffio/UI - BUILDER/Source Files/Panels/Panels@2x-assets/CornerPanels/CornerPanelRadius_34px_Stroke_20px.png
+  artifactKey: Guid(35652bf9d920338468eeb3a2169d5707) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/beffio/UI - BUILDER/Source Files/Panels/Panels@2x-assets/CornerPanels/CornerPanelRadius_34px_Stroke_20px.png using Guid(35652bf9d920338468eeb3a2169d5707) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ba9370d9352bf0b5fa9957c7e305cd3c') in 0.029976 seconds
+  Import took 0.059747 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000270 seconds.
+  path: Assets/beffio/UI - BUILDER/Source Files/Panels/Panels@2x-assets/CornerPanels/CornerPanelRadius_50px_Fill.png
+  artifactKey: Guid(76da24ca8883bf144b16b44329062408) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/beffio/UI - BUILDER/Source Files/Panels/Panels@2x-assets/CornerPanels/CornerPanelRadius_50px_Fill.png using Guid(76da24ca8883bf144b16b44329062408) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fc1e9dd696ff15063cde6bf0514df72a') in 0.052819 seconds
+  Import took 0.115061 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000482 seconds.
+  path: Assets/beffio/UI - BUILDER/Source Files/Panels/Panels@2x-assets/CornerPanels/CornerPanelRadius_50px_Stroke_1px.png
+  artifactKey: Guid(a2ce8871fe4904845bd7be1aecb96909) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/beffio/UI - BUILDER/Source Files/Panels/Panels@2x-assets/CornerPanels/CornerPanelRadius_50px_Stroke_1px.png using Guid(a2ce8871fe4904845bd7be1aecb96909) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7d9ff2eebe189329292575fbbb2398f7') in 0.077767 seconds
+  Import took 0.096751 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000396 seconds.
+  path: Assets/beffio/UI - BUILDER/Source Files/Panels/Panels@2x-assets/CornerPanels/CornerPanelRadius_12px_Stroke_20px.png
+  artifactKey: Guid(1996369307afcef4dbbbc2f59bff3eb7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/beffio/UI - BUILDER/Source Files/Panels/Panels@2x-assets/CornerPanels/CornerPanelRadius_12px_Stroke_20px.png using Guid(1996369307afcef4dbbbc2f59bff3eb7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '761862320ed8975522b6b518553ddd4c') in 0.060889 seconds
+  Import took 0.107212 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000348 seconds.
+  path: Assets/beffio/UI - BUILDER/Source Files/Panels/Panels@2x-assets/CornerPanels/CornerPanelRadius_24px_Stroke_4px.png
+  artifactKey: Guid(f83e2425b3af8fc4d86df3b55028cf5c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/beffio/UI - BUILDER/Source Files/Panels/Panels@2x-assets/CornerPanels/CornerPanelRadius_24px_Stroke_4px.png using Guid(f83e2425b3af8fc4d86df3b55028cf5c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0445f52e2a8aec5df402bd96c1565338') in 0.031580 seconds
+  Import took 0.048605 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000425 seconds.
+  path: Assets/beffio/UI - BUILDER/Source Files/Panels/Panels@2x-assets/CornerPanels/CornerPanelRadius_24px_Stroke_2px.png
+  artifactKey: Guid(533702d096c88c649ab3b636a7805f9d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/beffio/UI - BUILDER/Source Files/Panels/Panels@2x-assets/CornerPanels/CornerPanelRadius_24px_Stroke_2px.png using Guid(533702d096c88c649ab3b636a7805f9d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f96523dabfde31f5496e2c080d367448') in 0.050027 seconds
+  Import took 0.068015 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000405 seconds.
+  path: Assets/beffio/UI - BUILDER/Source Files/Panels/Panels@2x-assets/CornerPanels/CornerPanelRadius_34px_Stroke_1px.png
+  artifactKey: Guid(5f9315d4a2f1af04e8783b5e65ba3e19) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/beffio/UI - BUILDER/Source Files/Panels/Panels@2x-assets/CornerPanels/CornerPanelRadius_34px_Stroke_1px.png using Guid(5f9315d4a2f1af04e8783b5e65ba3e19) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fd163eed2c7a923f477894181cccae19') in 0.066994 seconds
+  Import took 0.093552 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000343 seconds.
+  path: Assets/beffio/UI - BUILDER/Source Files/Panels/Panels@2x-assets/CornerPanels/CornerPanelRadius_12px_Stroke_16px.png
+  artifactKey: Guid(8fdd7a4273b2dad41b321c8c511b779f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/beffio/UI - BUILDER/Source Files/Panels/Panels@2x-assets/CornerPanels/CornerPanelRadius_12px_Stroke_16px.png using Guid(8fdd7a4273b2dad41b321c8c511b779f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '13f351f8ce22d0edd8f2ba4412b97df6') in 0.062579 seconds
+  Import took 0.067796 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000561 seconds.
+  path: Assets/beffio/UI - BUILDER/Source Files/Panels/Panels@2x-assets/CornerPanels/CornerPanelRadius_24px_Stroke_12px.png
+  artifactKey: Guid(4eda23c88295e6545afdc83f908ffe10) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/beffio/UI - BUILDER/Source Files/Panels/Panels@2x-assets/CornerPanels/CornerPanelRadius_24px_Stroke_12px.png using Guid(4eda23c88295e6545afdc83f908ffe10) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '249d62e31b4a2fdc5185cefa81a0ac13') in 0.050247 seconds
+  Import took 0.056789 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000391 seconds.
+  path: Assets/beffio/UI - BUILDER/Source Files/Panels/Panels@2x-assets/CornerPanels/CornerPanelRadius_50px_Stroke_10px.png
+  artifactKey: Guid(e66ddcb5ab3dd23409039c28f44f5347) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/beffio/UI - BUILDER/Source Files/Panels/Panels@2x-assets/CornerPanels/CornerPanelRadius_50px_Stroke_10px.png using Guid(e66ddcb5ab3dd23409039c28f44f5347) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bd425d5bbb9de2047e84d9fb3e5ba1c9') in 0.026255 seconds
+  Import took 0.033162 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000412 seconds.
+  path: Assets/beffio/UI - BUILDER/Source Files/Panels/Panels@2x-assets/CornerPanels/CornerPanelRadius_34px_Stroke_2px.png
+  artifactKey: Guid(b2ab426885342db4cbddcfbade181376) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/beffio/UI - BUILDER/Source Files/Panels/Panels@2x-assets/CornerPanels/CornerPanelRadius_34px_Stroke_2px.png using Guid(b2ab426885342db4cbddcfbade181376) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7ccb29c948f973e4472acc6105fedb5e') in 0.028014 seconds
+  Import took 0.053241 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000308 seconds.
+  path: Assets/beffio/UI - BUILDER/Source Files/Panels/Panels@2x-assets/CornerPanels/CornerPanelRadius_12px_Stroke_4px.png
+  artifactKey: Guid(f1e87a1f0e9620240aac853c5b3c3f97) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/beffio/UI - BUILDER/Source Files/Panels/Panels@2x-assets/CornerPanels/CornerPanelRadius_12px_Stroke_4px.png using Guid(f1e87a1f0e9620240aac853c5b3c3f97) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7f8b17d472eb9c3be151d2adef0e8df9') in 0.042228 seconds
+  Import took 0.071947 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000527 seconds.
+  path: Assets/beffio/UI - BUILDER/Source Files/Panels/Panels@2x-assets/CornerPanels/CornerPanelRadius_24px_Stroke_10px.png
+  artifactKey: Guid(09714cf79609d474cb4fcbfb1af3cd35) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/beffio/UI - BUILDER/Source Files/Panels/Panels@2x-assets/CornerPanels/CornerPanelRadius_24px_Stroke_10px.png using Guid(09714cf79609d474cb4fcbfb1af3cd35) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a8287d1a044d0bc86352d01bdd82f2c8') in 0.029494 seconds
+  Import took 0.054910 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000401 seconds.
+  path: Assets/beffio/UI - BUILDER/Source Files/Panels/Panels@2x-assets/CornerPanels/CornerPanelRadius_34px_Stroke_10px.png
+  artifactKey: Guid(e603ba4ad9273de4481c8107cb6604a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/beffio/UI - BUILDER/Source Files/Panels/Panels@2x-assets/CornerPanels/CornerPanelRadius_34px_Stroke_10px.png using Guid(e603ba4ad9273de4481c8107cb6604a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd8ecb5ad480ca5b47ab63e237444680f') in 0.045809 seconds
+  Import took 0.071072 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000424 seconds.
+  path: Assets/beffio/UI - BUILDER/Source Files/Panels/Panels@2x-assets/CornerPanels/CornerPanelRadius_34px_Fill.png
+  artifactKey: Guid(2602b392225473f488103de030d81dbc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/beffio/UI - BUILDER/Source Files/Panels/Panels@2x-assets/CornerPanels/CornerPanelRadius_34px_Fill.png using Guid(2602b392225473f488103de030d81dbc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2a3cf559826ca7118498ae79fbefc35a') in 0.039403 seconds
+  Import took 0.084129 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000348 seconds.
+  path: Assets/beffio/UI - BUILDER/Source Files/Panels/Panels@2x-assets/CornerPanels/CornerPanelRadius_34px_Stroke_16px.png
+  artifactKey: Guid(8b7db3fd0116c7645853269e624c78f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/beffio/UI - BUILDER/Source Files/Panels/Panels@2x-assets/CornerPanels/CornerPanelRadius_34px_Stroke_16px.png using Guid(8b7db3fd0116c7645853269e624c78f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bf4b9a5c30e1bf6a6d329db9999a6885') in 0.055759 seconds
+  Import took 0.071660 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000425 seconds.
+  path: Assets/beffio/UI - BUILDER/Source Files/Panels/Panels@2x-assets/CornerPanels/CornerPanelRadius_12px_Stroke_12px.png
+  artifactKey: Guid(8218612080088c24abf483bcc480487a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/beffio/UI - BUILDER/Source Files/Panels/Panels@2x-assets/CornerPanels/CornerPanelRadius_12px_Stroke_12px.png using Guid(8218612080088c24abf483bcc480487a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '401fd8e21fbab758fdd938ea502364be') in 0.043960 seconds
+  Import took 0.136675 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000496 seconds.
+  path: Assets/beffio/UI - BUILDER/Source Files/Panels/Panels@2x-assets/CornerPanels/CornerPanelRadius_50px_Stroke_12px.png
+  artifactKey: Guid(b12c4efbbf297cf4db944b3a4d7e5316) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/beffio/UI - BUILDER/Source Files/Panels/Panels@2x-assets/CornerPanels/CornerPanelRadius_50px_Stroke_12px.png using Guid(b12c4efbbf297cf4db944b3a4d7e5316) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e92bd61918c171d0a28250e782f7d061') in 0.043638 seconds
+  Import took 0.074666 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000382 seconds.
+  path: Assets/beffio/UI - BUILDER/Source Files/Panels/Panels@2x-assets/CornerPanels/CornerPanelRadius_50px_Stroke_16px.png
+  artifactKey: Guid(7a5117e0bf3d55541b670aeb21e7addc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/beffio/UI - BUILDER/Source Files/Panels/Panels@2x-assets/CornerPanels/CornerPanelRadius_50px_Stroke_16px.png using Guid(7a5117e0bf3d55541b670aeb21e7addc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2aa1e8764aa69b31a849135448e6afff') in 0.111979 seconds
+  Import took 0.129998 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000454 seconds.
+  path: Assets/beffio/UI - BUILDER/Source Files/Panels/Panels@2x-assets/CornerPanels/CornerPanelRadius_50px_Stroke_20px.png
+  artifactKey: Guid(75101bc7c7d835843ad4a3ecc33b8de5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/beffio/UI - BUILDER/Source Files/Panels/Panels@2x-assets/CornerPanels/CornerPanelRadius_50px_Stroke_20px.png using Guid(75101bc7c7d835843ad4a3ecc33b8de5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b30d784cbc2b10a3bea5e4a79a1af058') in 0.054297 seconds
+  Import took 0.084649 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000391 seconds.
+  path: Assets/beffio/UI - BUILDER/Source Files/Panels/Panels@2x-assets/CornerPanels/CornerPanelRadius_24px_Stroke_1px.png
+  artifactKey: Guid(1f3ffa4f60190464f8c0bfab03168cb8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/beffio/UI - BUILDER/Source Files/Panels/Panels@2x-assets/CornerPanels/CornerPanelRadius_24px_Stroke_1px.png using Guid(1f3ffa4f60190464f8c0bfab03168cb8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9b64dc83dee5822e00fb12d3dffb7836') in 0.038456 seconds
+  Import took 0.118504 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.009541 seconds.
+  path: Assets/beffio/UI - BUILDER/Source Files/Panels/Panels@2x-assets/CornerPanels/CornerPanelRadius_24px_Stroke_1px.png
+  artifactKey: Guid(1f3ffa4f60190464f8c0bfab03168cb8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/beffio/UI - BUILDER/Source Files/Panels/Panels@2x-assets/CornerPanels/CornerPanelRadius_24px_Stroke_1px.png using Guid(1f3ffa4f60190464f8c0bfab03168cb8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9b64dc83dee5822e00fb12d3dffb7836') in 0.011258 seconds
+  Import took 0.018080 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.102454 seconds.
+  path: Assets/Prefabs/GameManager.prefab
+  artifactKey: Guid(2bf6516cfcb28a44ebc6260e7c9a4a55) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/GameManager.prefab using Guid(2bf6516cfcb28a44ebc6260e7c9a4a55) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '194d9256774754de6aa8a48e3043c9f9') in 0.018925 seconds
+  Import took 0.050856 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 24.967967 seconds.
+  path: Assets/Sprite/Images/Character/fait/henri-dihau-1891bien.png
+  artifactKey: Guid(5353d2783a3610c4eaefa1c2b0fac3ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprite/Images/Character/fait/henri-dihau-1891bien.png using Guid(5353d2783a3610c4eaefa1c2b0fac3ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '013cd44063d7cf2167e05246ef025e63') in 0.049870 seconds
+  Import took 0.083797 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000295 seconds.
+  path: Assets/Sprite/Images/Character/fait/in-batignolles-1888bien.png
+  artifactKey: Guid(8185874ebd944b94fb43e7832635976b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprite/Images/Character/fait/in-batignolles-1888bien.png using Guid(8185874ebd944b94fb43e7832635976b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0941856f06bd09684e49ec5bc3bff069') in 0.018640 seconds
+  Import took 0.048565 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.399392 seconds.
+  path: Assets/beffio/UI - BUILDER/Source Files/Panels/Panels@2x-assets/Labels/LabelRadius_24px_Fill.png
+  artifactKey: Guid(333a7a23980e82943822c1e6e2e4ed1a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/beffio/UI - BUILDER/Source Files/Panels/Panels@2x-assets/Labels/LabelRadius_24px_Fill.png using Guid(333a7a23980e82943822c1e6e2e4ed1a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f9d3a7b2053735388c506d667863b770') in 0.043939 seconds
+  Import took 0.051788 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000338 seconds.
+  path: Assets/beffio/UI - BUILDER/Source Files/Panels/Panels@2x-assets/Labels/LabelRadius_34px_Stroke_6px.png
+  artifactKey: Guid(96416e88142cead42ad506a9f9c308aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/beffio/UI - BUILDER/Source Files/Panels/Panels@2x-assets/Labels/LabelRadius_34px_Stroke_6px.png using Guid(96416e88142cead42ad506a9f9c308aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0feed55bbc3b354697e4f03824d58f44') in 0.092826 seconds
+  Import took 0.198680 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000420 seconds.
+  path: Assets/beffio/UI - BUILDER/Source Files/Panels/Panels@2x-assets/OneSidePanels/OneSideCornerPanelRadius_1px_Stroke_10px.png
+  artifactKey: Guid(f25460bc9c3572542bc329028156c264) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/beffio/UI - BUILDER/Source Files/Panels/Panels@2x-assets/OneSidePanels/OneSideCornerPanelRadius_1px_Stroke_10px.png using Guid(f25460bc9c3572542bc329028156c264) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cfea66b764a93c60f946489fc0e8ff6c') in 0.137196 seconds
+  Import took 0.184441 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000458 seconds.
+  path: Assets/beffio/UI - BUILDER/Source Files/Panels/Panels@2x-assets/Labels/LabelRadius_24px_Stroke_16px.png
+  artifactKey: Guid(ba4c0e61ad7600f45978ea8a02115ab7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/beffio/UI - BUILDER/Source Files/Panels/Panels@2x-assets/Labels/LabelRadius_24px_Stroke_16px.png using Guid(ba4c0e61ad7600f45978ea8a02115ab7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '06d67d2616e7a975cbdfa1c2be8f015f') in 0.107969 seconds
+  Import took 0.137081 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000345 seconds.
+  path: Assets/beffio/UI - BUILDER/Source Files/Icons/Icons@4x-assets/Location/LocationIcons_3.png
+  artifactKey: Guid(53f800153b3f313458f4266ebdcd90b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/beffio/UI - BUILDER/Source Files/Icons/Icons@4x-assets/Location/LocationIcons_3.png using Guid(53f800153b3f313458f4266ebdcd90b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bff565250a659652b64983271987fd19') in 0.267504 seconds
+  Import took 0.332651 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000367 seconds.
+  path: Assets/beffio/UI - BUILDER/Source Files/Panels/Panels@2x-assets/OneSidePanels/OneSideCornerPanelRadius_1px_Stroke_20px.png
+  artifactKey: Guid(069f10a29877e5946a5d8cad2358fb3e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/beffio/UI - BUILDER/Source Files/Panels/Panels@2x-assets/OneSidePanels/OneSideCornerPanelRadius_1px_Stroke_20px.png using Guid(069f10a29877e5946a5d8cad2358fb3e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '399eff44867b7f90b83f6fdbbd5dd06f') in 0.139000 seconds
+  Import took 0.219688 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000301 seconds.
+  path: Assets/beffio/UI - BUILDER/Source Files/Icons/Icons@4x-assets/Location/LocationIcons_2.png
+  artifactKey: Guid(f98f5cc4a72f8314c96408bc9998d42a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/beffio/UI - BUILDER/Source Files/Icons/Icons@4x-assets/Location/LocationIcons_2.png using Guid(f98f5cc4a72f8314c96408bc9998d42a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '536fc77e18f2e51007bf26ddb9c16ba4') in 0.170053 seconds
+  Import took 0.212883 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000404 seconds.
+  path: Assets/beffio/UI - BUILDER/Source Files/Panels/Panels@2x-assets/OneSidePanels/OneSideCornerPanelRadius_1px_Stroke_6px.png
+  artifactKey: Guid(67f5f6b30aa6e9a40838babf11e29b96) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/beffio/UI - BUILDER/Source Files/Panels/Panels@2x-assets/OneSidePanels/OneSideCornerPanelRadius_1px_Stroke_6px.png using Guid(67f5f6b30aa6e9a40838babf11e29b96) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5f9dee07cbf4b88923554e42ab649e75') in 0.112155 seconds
+  Import took 0.160018 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000427 seconds.
+  path: Assets/beffio/UI - BUILDER/Source Files/Panels/Panels@2x-assets/OneSidePanels/OneSideCornerPanelRadius_6px_Stroke_1px.png
+  artifactKey: Guid(5cb334663fb8d0c4ca150f6fc500605a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/beffio/UI - BUILDER/Source Files/Panels/Panels@2x-assets/OneSidePanels/OneSideCornerPanelRadius_6px_Stroke_1px.png using Guid(5cb334663fb8d0c4ca150f6fc500605a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '57e0cf5a0a731bf560ae210e57076115') in 0.095295 seconds
+  Import took 0.169884 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000394 seconds.
+  path: Assets/beffio/UI - BUILDER/Source Files/Panels/Panels@2x-assets/OneSidePanels/OneSideCornerPanelRadius_6px_Fill.png
+  artifactKey: Guid(7cc9db8eaa52edd4f85e991a301e6d23) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/beffio/UI - BUILDER/Source Files/Panels/Panels@2x-assets/OneSidePanels/OneSideCornerPanelRadius_6px_Fill.png using Guid(7cc9db8eaa52edd4f85e991a301e6d23) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ccac7bf94fd7c6c7d13a6997dee9ce6e') in 0.103072 seconds
+  Import took 0.126460 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000402 seconds.
+  path: Assets/beffio/UI - BUILDER/Source Files/Panels/Panels@2x-assets/Labels/LabelRadius_24px_Stroke_4px.png
+  artifactKey: Guid(547b21bfd0e911a4285bc2b65d0506ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/beffio/UI - BUILDER/Source Files/Panels/Panels@2x-assets/Labels/LabelRadius_24px_Stroke_4px.png using Guid(547b21bfd0e911a4285bc2b65d0506ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e72926a0f27d4c95a188967e022205bc') in 0.081070 seconds
+  Import took 0.151240 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000337 seconds.
+  path: Assets/beffio/UI - BUILDER/Source Files/Panels/Panels@2x-assets/OneSidePanels/OneSideCornerPanelRadius_1px_Fill.png
+  artifactKey: Guid(e162d15b0f9e4504cadf7233bdfeada7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/beffio/UI - BUILDER/Source Files/Panels/Panels@2x-assets/OneSidePanels/OneSideCornerPanelRadius_1px_Fill.png using Guid(e162d15b0f9e4504cadf7233bdfeada7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9ae42e88c6d2204e1b45770d38b06b00') in 0.097534 seconds
+  Import took 0.119612 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000387 seconds.
+  path: Assets/beffio/UI - BUILDER/Source Files/Panels/Panels@2x-assets/Labels/LabelRadius_24px_Stroke_2px.png
+  artifactKey: Guid(7a8c38109919bf54582cec6105b03d24) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/beffio/UI - BUILDER/Source Files/Panels/Panels@2x-assets/Labels/LabelRadius_24px_Stroke_2px.png using Guid(7a8c38109919bf54582cec6105b03d24) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '796ad84d64a6b4f811def3026bb195cb') in 0.108377 seconds
+  Import took 0.191357 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000334 seconds.
+  path: Assets/beffio/UI - BUILDER/Source Files/Icons/Icons@4x-assets/Location/LocationIcons_6.png
+  artifactKey: Guid(b437e95bb032a544e957b32be45507d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/beffio/UI - BUILDER/Source Files/Icons/Icons@4x-assets/Location/LocationIcons_6.png using Guid(b437e95bb032a544e957b32be45507d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6ba19c48c1754b4c3f4815fc44e69bef') in 0.108756 seconds
+  Import took 0.168835 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000462 seconds.
+  path: Assets/beffio/UI - BUILDER/Source Files/Panels/Panels@2x-assets/Labels/LabelRadius_24px_Stroke_6px.png
+  artifactKey: Guid(349c9d21270041247ba781c38d0f05e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/beffio/UI - BUILDER/Source Files/Panels/Panels@2x-assets/Labels/LabelRadius_24px_Stroke_6px.png using Guid(349c9d21270041247ba781c38d0f05e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'de784819b281097ec3deed4909a25c7e') in 0.056562 seconds
+  Import took 0.080041 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000414 seconds.
+  path: Assets/beffio/UI - BUILDER/Source Files/Panels/Panels@2x-assets/Labels/LabelRadius_34px_Stroke_10px.png
+  artifactKey: Guid(096d6d391ef49c2498e920bdcfc7d83f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/beffio/UI - BUILDER/Source Files/Panels/Panels@2x-assets/Labels/LabelRadius_34px_Stroke_10px.png using Guid(096d6d391ef49c2498e920bdcfc7d83f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '84b9b1a72181bfca287cbb65fa64b577') in 0.099199 seconds
+  Import took 0.104375 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000422 seconds.
+  path: Assets/beffio/UI - BUILDER/Source Files/Panels/Panels@2x-assets/Labels/LabelRadius_24px_Stroke_12px.png
+  artifactKey: Guid(3e9a2734bce9aa64a81028e87070bfcc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/beffio/UI - BUILDER/Source Files/Panels/Panels@2x-assets/Labels/LabelRadius_24px_Stroke_12px.png using Guid(3e9a2734bce9aa64a81028e87070bfcc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd377c397421ee4cfcd31899679e662bf') in 0.062518 seconds
+  Import took 0.105807 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000367 seconds.
+  path: Assets/beffio/UI - BUILDER/Source Files/Icons/Icons@4x-assets/Location/LocationIcons_7.png
+  artifactKey: Guid(1f174767fcd03264fa56bdc2ef4f15a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/beffio/UI - BUILDER/Source Files/Icons/Icons@4x-assets/Location/LocationIcons_7.png using Guid(1f174767fcd03264fa56bdc2ef4f15a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '631ca3d8cd2761093a686f9d45fe6a3e') in 0.137825 seconds
+  Import took 0.144284 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000391 seconds.
+  path: Assets/beffio/UI - BUILDER/Source Files/Icons/Icons@4x-assets/Location/LocationIcons_1.png
+  artifactKey: Guid(61110896e983e6b44a7cfe24ba6c0725) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/beffio/UI - BUILDER/Source Files/Icons/Icons@4x-assets/Location/LocationIcons_1.png using Guid(61110896e983e6b44a7cfe24ba6c0725) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9968609ef259f620670e741e3648669b') in 0.152482 seconds
+  Import took 0.204462 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000464 seconds.
+  path: Assets/beffio/UI - BUILDER/Source Files/Icons/Icons@4x-assets/Location/LocationIcons_5.png
+  artifactKey: Guid(2d434b50ee1d52c428111149c240cbb6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/beffio/UI - BUILDER/Source Files/Icons/Icons@4x-assets/Location/LocationIcons_5.png using Guid(2d434b50ee1d52c428111149c240cbb6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eba57800b729701fb410000108e02949') in 0.189987 seconds
+  Import took 0.271640 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000352 seconds.
+  path: Assets/beffio/UI - BUILDER/Source Files/Panels/Panels@2x-assets/Labels/LabelRadius_24px_Stroke_1px.png
+  artifactKey: Guid(116fa69156d0ec745b1f597b91b816ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/beffio/UI - BUILDER/Source Files/Panels/Panels@2x-assets/Labels/LabelRadius_24px_Stroke_1px.png using Guid(116fa69156d0ec745b1f597b91b816ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '81a3e146197f4bfb4d1657f05bea9fee') in 0.041203 seconds
+  Import took 0.097990 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000354 seconds.
+  path: Assets/beffio/UI - BUILDER/Source Files/Panels/Panels@2x-assets/Circles/MiddleSize_Stroke_32px.png
+  artifactKey: Guid(e065efff32cd3d54f85192e36e7c68bc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/beffio/UI - BUILDER/Source Files/Panels/Panels@2x-assets/Circles/MiddleSize_Stroke_32px.png using Guid(e065efff32cd3d54f85192e36e7c68bc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c6c182b041de77ab1198de2b49d2aa34') in 0.151030 seconds
+  Import took 0.157897 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000404 seconds.
+  path: Assets/beffio/UI - BUILDER/Source Files/Panels/Panels@2x-assets/OneSidePanels/OneSideCornerPanelRadius_1px_Stroke_12px.png
+  artifactKey: Guid(5428251bf340db94e9ee17bb2ed89268) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/beffio/UI - BUILDER/Source Files/Panels/Panels@2x-assets/OneSidePanels/OneSideCornerPanelRadius_1px_Stroke_12px.png using Guid(5428251bf340db94e9ee17bb2ed89268) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c6ffb358998afd67b6652875ac2cb38e') in 0.075305 seconds
+  Import took 0.082059 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000377 seconds.
+  path: Assets/beffio/UI - BUILDER/Source Files/Panels/Panels@2x-assets/Labels/LabelRadius_34px_Stroke_4px.png
+  artifactKey: Guid(1439fe478d209d14aa0a523ab39fa75a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/beffio/UI - BUILDER/Source Files/Panels/Panels@2x-assets/Labels/LabelRadius_34px_Stroke_4px.png using Guid(1439fe478d209d14aa0a523ab39fa75a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '42eeba7abecebdef96e58c3ced4136e5') in 0.075328 seconds
+  Import took 0.141495 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000335 seconds.
+  path: Assets/beffio/UI - BUILDER/Source Files/Panels/Panels@2x-assets/Labels/LabelRadius_24px_Fill.png
+  artifactKey: Guid(333a7a23980e82943822c1e6e2e4ed1a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/beffio/UI - BUILDER/Source Files/Panels/Panels@2x-assets/Labels/LabelRadius_24px_Fill.png using Guid(333a7a23980e82943822c1e6e2e4ed1a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f9d3a7b2053735388c506d667863b770') in 0.012781 seconds
+  Import took 0.019703 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000536 seconds.
+  path: Assets/beffio/UI - BUILDER/Source Files/Panels/Panels@2x-assets/Labels/LabelRadius_34px_Stroke_2px.png
+  artifactKey: Guid(eab3edcae37a3014180263b66a2b80db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/beffio/UI - BUILDER/Source Files/Panels/Panels@2x-assets/Labels/LabelRadius_34px_Stroke_2px.png using Guid(eab3edcae37a3014180263b66a2b80db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '786201501e206d18ef2671d5126c2c84') in 0.069323 seconds
+  Import took 0.125965 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000474 seconds.
+  path: Assets/beffio/UI - BUILDER/Source Files/Icons/Icons@4x-assets/Location/LocationIcons_4.png
+  artifactKey: Guid(4295497c6e0cce046bb040418eb9ef4f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/beffio/UI - BUILDER/Source Files/Icons/Icons@4x-assets/Location/LocationIcons_4.png using Guid(4295497c6e0cce046bb040418eb9ef4f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e352dc53bead17efc1f701853f0256e9') in 0.114188 seconds
+  Import took 0.194739 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000421 seconds.
+  path: Assets/beffio/UI - BUILDER/Source Files/Panels/Panels@2x-assets/Labels/LabelRadius_24px_Stroke_20px.png
+  artifactKey: Guid(a59e2d89db356dd4099aaaa81f559b53) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/beffio/UI - BUILDER/Source Files/Panels/Panels@2x-assets/Labels/LabelRadius_24px_Stroke_20px.png using Guid(a59e2d89db356dd4099aaaa81f559b53) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '92a8049cbc6b8d9ba7920ff416a359d5') in 0.040623 seconds
+  Import took 0.062709 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000453 seconds.
+  path: Assets/beffio/UI - BUILDER/Source Files/Panels/Panels@2x-assets/Labels/LabelRadius_24px_Stroke_10px.png
+  artifactKey: Guid(e41228b448f078a4797dea030b66cd17) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/beffio/UI - BUILDER/Source Files/Panels/Panels@2x-assets/Labels/LabelRadius_24px_Stroke_10px.png using Guid(e41228b448f078a4797dea030b66cd17) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6d4c9126f3a29cee287017e4f1582630') in 0.050384 seconds
+  Import took 0.134638 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000341 seconds.
+  path: Assets/beffio/UI - BUILDER/Source Files/Panels/Panels@2x-assets/Labels/LabelRadius_34px_Stroke_16px.png
+  artifactKey: Guid(0e940697842f1004f9bc9942a79b4c93) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/beffio/UI - BUILDER/Source Files/Panels/Panels@2x-assets/Labels/LabelRadius_34px_Stroke_16px.png using Guid(0e940697842f1004f9bc9942a79b4c93) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8011b3496f46fa6ec12514d772cb4dba') in 0.068239 seconds
+  Import took 0.139598 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000612 seconds.
+  path: Assets/beffio/UI - BUILDER/Source Files/Panels/Panels@2x-assets/Labels/LabelRadius_34px_Fill.png
+  artifactKey: Guid(53eafaabd022b2f47904618d8710d4f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/beffio/UI - BUILDER/Source Files/Panels/Panels@2x-assets/Labels/LabelRadius_34px_Fill.png using Guid(53eafaabd022b2f47904618d8710d4f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e3e2c869e2ec836dfed0a1e7cad2cae8') in 0.054548 seconds
+  Import took 0.085601 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000387 seconds.
+  path: Assets/beffio/UI - BUILDER/Source Files/Panels/Panels@2x-assets/OneSidePanels/OneSideCornerPanelRadius_1px_Stroke_4px.png
+  artifactKey: Guid(25317056061202b408d2d78855681602) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/beffio/UI - BUILDER/Source Files/Panels/Panels@2x-assets/OneSidePanels/OneSideCornerPanelRadius_1px_Stroke_4px.png using Guid(25317056061202b408d2d78855681602) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '311adb71746fd020fa60fcd6438baac4') in 0.085172 seconds
+  Import took 0.112500 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 13.196570 seconds.
+  path: Assets/Prefabs/GameManager.prefab
+  artifactKey: Guid(2bf6516cfcb28a44ebc6260e7c9a4a55) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/GameManager.prefab using Guid(2bf6516cfcb28a44ebc6260e7c9a4a55) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f4de6dc74c253e6ba1e47e55117911f7') in 0.007822 seconds
+  Import took 0.151369 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002711 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.76 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.120 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
 Refreshing native plugins compatible for Editor in 0.79 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.302 seconds
-Platform modules already initialized, skipping
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 0.84 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3044 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 138.9 MB.
-System memory in use after: 139.1 MB.
+Unloading 3047 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 136.8 MB.
+System memory in use after: 137.0 MB.
 
-Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 3730.
-Total: 4.054400 ms (FindLiveObjects: 0.825600 ms CreateObjectMapping: 0.392400 ms MarkObjects: 2.798700 ms  DeleteObjects: 0.036300 ms)
+Unloading 13 unused Assets to reduce memory usage. Loaded Objects now: 3684.
+Total: 4.445600 ms (FindLiveObjects: 0.401000 ms CreateObjectMapping: 0.240900 ms MarkObjects: 3.756500 ms  DeleteObjects: 0.045700 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 48.545783 seconds.
+  path: Assets/Prefabs/GameManager.prefab
+  artifactKey: Guid(2bf6516cfcb28a44ebc6260e7c9a4a55) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/GameManager.prefab using Guid(2bf6516cfcb28a44ebc6260e7c9a4a55) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '880038dc00688c8fc991784292365479') in 0.051116 seconds
+  Import took 0.090732 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.866939 seconds.
+  path: Assets/Prefabs/GameManager.prefab
+  artifactKey: Guid(2bf6516cfcb28a44ebc6260e7c9a4a55) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/GameManager.prefab using Guid(2bf6516cfcb28a44ebc6260e7c9a4a55) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '093b9a592d8ebb474827d198bbcd35cb') in 0.018954 seconds
+  Import took 0.026953 seconds .
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.003980 seconds.
+Registered in 0.004155 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for LinuxStandalone target not found
 Native extension for WindowsStandalone target not found
 Native extension for OSXStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.81 ms, found 1 plugins.
+Refreshing native plugins compatible for Editor in 0.74 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.288 seconds
-Platform modules already initialized, skipping
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 0.95 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3044 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 138.9 MB.
-System memory in use after: 139.1 MB.
-
-Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 3733.
-Total: 3.493900 ms (FindLiveObjects: 0.430100 ms CreateObjectMapping: 0.239200 ms MarkObjects: 2.798300 ms  DeleteObjects: 0.025000 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.003646 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for LinuxStandalone target not found
-Native extension for WindowsStandalone target not found
-Native extension for OSXStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.98 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.301 seconds
-Platform modules already initialized, skipping
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 0.90 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3044 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 138.9 MB.
-System memory in use after: 139.1 MB.
-
-Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 3736.
-Total: 4.979200 ms (FindLiveObjects: 0.423400 ms CreateObjectMapping: 0.428000 ms MarkObjects: 4.083300 ms  DeleteObjects: 0.043200 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.002610 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for LinuxStandalone target not found
-Native extension for WindowsStandalone target not found
-Native extension for OSXStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.76 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.256 seconds
+- Completed reload, in  1.071 seconds
 Platform modules already initialized, skipping
 Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
 Refreshing native plugins compatible for Editor in 0.80 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3044 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 138.9 MB.
-System memory in use after: 139.1 MB.
+Unloading 3047 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 136.8 MB.
+System memory in use after: 137.1 MB.
 
-Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 3739.
-Total: 3.610900 ms (FindLiveObjects: 0.330900 ms CreateObjectMapping: 0.177900 ms MarkObjects: 3.060600 ms  DeleteObjects: 0.040300 ms)
+Unloading 13 unused Assets to reduce memory usage. Loaded Objects now: 3687.
+Total: 4.573200 ms (FindLiveObjects: 0.552200 ms CreateObjectMapping: 0.288800 ms MarkObjects: 3.696700 ms  DeleteObjects: 0.034300 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 84.351076 seconds.
+  path: Assets/Prefabs/GameManager.prefab
+  artifactKey: Guid(2bf6516cfcb28a44ebc6260e7c9a4a55) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/GameManager.prefab using Guid(2bf6516cfcb28a44ebc6260e7c9a4a55) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a5ee2c384939df6a6b0548a7bd7b074a') in 0.054161 seconds
+  Import took 0.082603 seconds .
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.002593 seconds.
+Registered in 0.004311 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for LinuxStandalone target not found
 Native extension for WindowsStandalone target not found
 Native extension for OSXStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.76 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.285 seconds
-Platform modules already initialized, skipping
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 0.81 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3044 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 138.9 MB.
-System memory in use after: 139.2 MB.
-
-Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 3742.
-Total: 3.756300 ms (FindLiveObjects: 0.354500 ms CreateObjectMapping: 0.191300 ms MarkObjects: 3.138300 ms  DeleteObjects: 0.071100 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.002746 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for LinuxStandalone target not found
-Native extension for WindowsStandalone target not found
-Native extension for OSXStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.85 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.316 seconds
-Platform modules already initialized, skipping
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
 Refreshing native plugins compatible for Editor in 0.84 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3044 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 138.9 MB.
-System memory in use after: 139.2 MB.
-
-Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 3745.
-Total: 4.518500 ms (FindLiveObjects: 0.522500 ms CreateObjectMapping: 0.227200 ms MarkObjects: 3.746800 ms  DeleteObjects: 0.020700 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.003034 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for LinuxStandalone target not found
-Native extension for WindowsStandalone target not found
-Native extension for OSXStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.90 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.305 seconds
+- Completed reload, in  1.348 seconds
 Platform modules already initialized, skipping
 Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 0.80 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3044 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 138.9 MB.
-System memory in use after: 139.2 MB.
-
-Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 3748.
-Total: 3.652100 ms (FindLiveObjects: 0.465600 ms CreateObjectMapping: 0.222100 ms MarkObjects: 2.944100 ms  DeleteObjects: 0.019100 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.003184 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for LinuxStandalone target not found
-Native extension for WindowsStandalone target not found
-Native extension for OSXStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.82 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.388 seconds
-Platform modules already initialized, skipping
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 0.78 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3044 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 138.9 MB.
-System memory in use after: 139.2 MB.
-
-Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 3751.
-Total: 5.722800 ms (FindLiveObjects: 0.508800 ms CreateObjectMapping: 0.342800 ms MarkObjects: 4.812100 ms  DeleteObjects: 0.036800 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.003377 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for LinuxStandalone target not found
-Native extension for WindowsStandalone target not found
-Native extension for OSXStandalone target not found
-Native extension for WebGL target not found
 Refreshing native plugins compatible for Editor in 0.89 ms, found 1 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.212 seconds
-Platform modules already initialized, skipping
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 0.82 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3044 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 139.0 MB.
-System memory in use after: 139.2 MB.
+Unloading 3047 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 136.8 MB.
+System memory in use after: 137.1 MB.
 
-Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 3754.
-Total: 3.445500 ms (FindLiveObjects: 0.454300 ms CreateObjectMapping: 0.172600 ms MarkObjects: 2.768800 ms  DeleteObjects: 0.048700 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.002802 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for LinuxStandalone target not found
-Native extension for WindowsStandalone target not found
-Native extension for OSXStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.78 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.334 seconds
-Platform modules already initialized, skipping
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 0.78 ms, found 1 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3044 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 139.0 MB.
-System memory in use after: 139.2 MB.
-
-Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 3757.
-Total: 4.011300 ms (FindLiveObjects: 0.358600 ms CreateObjectMapping: 0.234200 ms MarkObjects: 3.379800 ms  DeleteObjects: 0.037300 ms)
+Unloading 13 unused Assets to reduce memory usage. Loaded Objects now: 3690.
+Total: 3.646400 ms (FindLiveObjects: 0.369900 ms CreateObjectMapping: 0.310200 ms MarkObjects: 2.899800 ms  DeleteObjects: 0.065000 ms)
 
 ========================================================================
 Received Import Request.
-  Time since last request: 1868.719516 seconds.
-  path: Assets/PathCreator/Core
-  artifactKey: Guid(fded9f896ea32473eb30ae61b640a176) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/PathCreator/Core using Guid(fded9f896ea32473eb30ae61b640a176) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '40b38dae50f3885080f1460beb272ba6') in 0.010693 seconds
-  Import took 0.019389 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.032093 seconds.
-  path: Assets/PathCreator/Core
-  artifactKey: Guid(fded9f896ea32473eb30ae61b640a176) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/PathCreator/Core using Guid(fded9f896ea32473eb30ae61b640a176) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '40b38dae50f3885080f1460beb272ba6') in 0.002205 seconds
-  Import took 0.009806 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 2.508723 seconds.
-  path: Assets/PathCreator/Documentation
-  artifactKey: Guid(7f53e212088d741abad12e1f2315eee7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/PathCreator/Documentation using Guid(7f53e212088d741abad12e1f2315eee7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bcd1e646699c63e8b28d8b8830292ed2') in 0.002445 seconds
-  Import took 0.008887 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 4.094203 seconds.
-  path: Assets/PathCreator/Examples/Prefabs/Cube.prefab
-  artifactKey: Guid(f19b52bc2573b4e508c60232d5ba4c53) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/PathCreator/Examples/Prefabs/Cube.prefab using Guid(f19b52bc2573b4e508c60232d5ba4c53) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f556f7682b1abebe3eedcd7bf641ea7e') in 0.227405 seconds
-  Import took 0.233403 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000357 seconds.
-  path: Assets/PathCreator/Examples/Prefabs/Path.prefab
-  artifactKey: Guid(2791553a612d84e7c9f3c0a95308376f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/PathCreator/Examples/Prefabs/Path.prefab using Guid(2791553a612d84e7c9f3c0a95308376f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '46274ee21690d461150a1fb81b62cc83') in 0.007533 seconds
-  Import took 0.014002 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000418 seconds.
-  path: Assets/PathCreator/Examples/Prefabs/Sphere.prefab
-  artifactKey: Guid(cb2e1e8aa0d44489c8d332b91c9a4202) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/PathCreator/Examples/Prefabs/Sphere.prefab using Guid(cb2e1e8aa0d44489c8d332b91c9a4202) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '92cdfb3a0486713f4a6679b9b1c3edac') in 0.012126 seconds
-  Import took 0.019843 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000313 seconds.
-  path: Assets/PathCreator/Examples/Prefabs/Follower.prefab
-  artifactKey: Guid(761d600d1e80341ac97f3228771ce637) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/PathCreator/Examples/Prefabs/Follower.prefab using Guid(761d600d1e80341ac97f3228771ce637) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd789a0fc2b77102ac935d2d42db8cb4d') in 0.070577 seconds
-  Import took 0.076429 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 5.497519 seconds.
-  path: Assets/PathCreator/Examples/Scripts/Editor
-  artifactKey: Guid(37afd3c65f48fa94bbb5a65473466658) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/PathCreator/Examples/Scripts/Editor using Guid(37afd3c65f48fa94bbb5a65473466658) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1af19c190de931b2016f86fa2a14b139') in 0.082490 seconds
-  Import took 0.089466 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 7.036609 seconds.
-  path: Assets/PathCreator/Core/Editor
-  artifactKey: Guid(76c2f3171eae9954aa317277dbffd478) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/PathCreator/Core/Editor using Guid(76c2f3171eae9954aa317277dbffd478) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a50d60e1022687654e7fe216d6da0ce8') in 0.003022 seconds
-  Import took 0.009495 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.025490 seconds.
-  path: Assets/PathCreator/Core/Editor
-  artifactKey: Guid(76c2f3171eae9954aa317277dbffd478) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/PathCreator/Core/Editor using Guid(76c2f3171eae9954aa317277dbffd478) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a50d60e1022687654e7fe216d6da0ce8') in 0.002201 seconds
-  Import took 0.009740 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.013118 seconds.
-  path: Assets/PathCreator/Core/Editor/PathCreatorEditor.asmdef
-  artifactKey: Guid(92ee438f32d811247a22ca14bf2a3fe0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/PathCreator/Core/Editor/PathCreatorEditor.asmdef using Guid(92ee438f32d811247a22ca14bf2a3fe0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0ee69fe1024e19dc070f7388c7576955') in 0.006665 seconds
-  Import took 0.013471 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 1.817822 seconds.
-  path: Assets/PathCreator/Core/Settings/GlobalDisplaySettings.asset
-  artifactKey: Guid(35fab21375bf12f4b96eba4dafa4ad30) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/PathCreator/Core/Settings/GlobalDisplaySettings.asset using Guid(35fab21375bf12f4b96eba4dafa4ad30) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2e35eb89d44308adfc3136d70c5e47cf') in 0.006236 seconds
-  Import took 0.013030 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 29.982227 seconds.
-  path: Assets/PathCreator/Core/Runtime/PathCreator.asmdef
-  artifactKey: Guid(626070ea3273cb844a310aa4f53b31fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/PathCreator/Core/Runtime/PathCreator.asmdef using Guid(626070ea3273cb844a310aa4f53b31fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c107796c4b6e04fcc87d75a7aa9e4ad0') in 0.342737 seconds
-  Import took 0.349300 seconds .
+  Time since last request: 1871.848485 seconds.
+  path: Assets/Sprite/Images/Character/avril
+  artifactKey: Guid(44d8ad3df436df94c9cfefc15c59bc40) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprite/Images/Character/avril using Guid(44d8ad3df436df94c9cfefc15c59bc40) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6db0d3f6b68b83e545da4b72d75f2070') in 0.010011 seconds
+  Import took 0.109307 seconds .
 
 AssetImportWorkerClient::OnTransportError - code=2 error=End of file
